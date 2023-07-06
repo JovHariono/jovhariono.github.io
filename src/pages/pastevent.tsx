@@ -81,8 +81,8 @@ const PastEvent: React.FunctionComponent<IPastEventProps> = (props) => {
         </div>
       </div>
       <div className="contentPastEvents">
-        {Events.map((event) => {
-          return <Event gambar={event.gambar} />;
+        {Events.map((event, index) => {
+          return <Event key={index} gambar={event.gambar} />;
         })}
       </div>
       <Footer />

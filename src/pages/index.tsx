@@ -164,9 +164,9 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           modules={[Autoplay, Pagination, Navigation, FreeMode]}
           className="mySwiper"
         >
-          {Homeimgs.map((homeimg) => {
+          {Homeimgs.map((homeimg, index) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <Homeimg gambar={homeimg.gambar} />
               </SwiperSlide>
             );
@@ -187,9 +187,9 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           and memorable experience for our customers every single day.
         </div>
         <div className="containerHomeValue">
-          {Values.map((value) => {
+          {Values.map((value, index) => {
             return (
-              <Value
+              <Value key={index}
                 gambar={value.gambar}
                 judul={value.judul}
                 text={value.text}
@@ -206,8 +206,8 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
         </div>
       </div> */}
         <div className="containerVideoHome">
-          {Videos.map((video) => {
-            return <Video link={video.link} judul={video.judul} />;
+          {Videos.map((video, index) => {
+            return <Video key={index} link={video.link} judul={video.judul} />;
           })}
         </div>
       <Footer />

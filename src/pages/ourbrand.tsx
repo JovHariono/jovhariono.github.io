@@ -80,7 +80,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
         <div className="contentOurBrand">
           {Brands.map((brand, index) => {
             return (
-              <div className="containerBrand" onClick={() => togglePop(brand)}>
+              <div className="containerBrand" onClick={() => togglePop(brand)} key={index}>
                 <Image className="imgBrand" src={brand.image} alt="unknown" />
                 <h2 className="judulBrand"> {brand.judul} </h2>
                 <div className="seperatorBrand"></div>
