@@ -23,7 +23,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             </Link>
           </li>
           <li className="li-bar">
-            <Link className="linkabout" href="http://localhost:3000/#about-us" color="white">
+            <Link className="linkabout" href="https://jovhariono.github.io/#about-us" color="white">
               ABOUT US
             </Link>
           </li>
