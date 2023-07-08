@@ -166,7 +166,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  display: none !important;
 }
 
 .menu-item{
@@ -941,7 +941,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .popUpBrand {
     position: fixed;
     top: 7%;
-    left: 6%;
+    left: 8%;
     transform: translate(-50%, -50%);
     width: 600px;
     padding: 50px;
