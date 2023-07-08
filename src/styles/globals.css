@@ -847,52 +847,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Footer */
 
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 15px;
-  }
-
-  .containerHomeValue {
-    flex-direction: column;
-  }
-
-  .containerValue {
-    width: 100%;
-  }
-
-  .containerVideoHome {
-    flex-direction: column;
-  }
-
-  .contentOurBrand {
-    flex-direction: column;
-  }
-
-  .containerCounterUp {
-    gap: 4rem;
-    flex-wrap: wrap;
-  }
-
-  .countUpNum {
-    font-size: 2rem;
-  }
-
-  .contentPastEvents {
-  }
-
-  .containerEvent {
-    width: 50%;
-    height: 16rem;
-  }
-
-  .counterItem {
-    width: 40%;
-  }
-
-  .imgEvent {
-  }
-}
-
 @media only screen and (max-width: 900px) {
   .containerVideo {
     width: 47%;
@@ -940,12 +894,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .popUpBrand {
     position: fixed;
-    top: 7%;
-    left: 8%;
+    top: 2%;
+    left: 16%;
     transform: translate(-50%, -50%);
     width: 600px;
     padding: 50px;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     background: white;
     backdrop-filter: blur(8px);
@@ -954,5 +909,83 @@ Note: Beware of modifying this element as it can break the animations - you shou
     animation-delay: 0.5s;
     animation-name: fadeInUp;
     animation-fill-mode: both;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+
+  .containerHomeValue {
+    flex-direction: column;
+  }
+
+  .containerValue {
+    width: 100%;
+  }
+
+  .containerVideoHome {
+    flex-direction: column;
+  }
+
+  .contentOurBrand {
+    flex-direction: column;
+  }
+
+  .containerCounterUp {
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .countUpNum {
+    font-size: 2rem;
+  }
+
+  .contentPastEvents {
+  }
+
+  .containerEvent {
+    width: 50%;
+    height: 16rem;
+  }
+
+  .counterItem {
+    width: 40%;
+    
+  }
+
+  .imgEvent {
+  }
+
+  .popUpBrand {
+    position: fixed;
+    top: 3.5%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 50px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+  }
+
+  .imagePopUp{
+    height: 14rem;
+  }
+
+  .judulPopUp{
+    font-size: 1rem;
+  }
+
+  .deskripsiPopUp{
+    font-size: 0.9rem;
   }
 }

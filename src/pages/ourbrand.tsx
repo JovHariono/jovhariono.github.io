@@ -99,7 +99,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
           <Image className="imagePopUp" src={isDataImagePopUp ? isDataImagePopUp : ""} alt="unknown" />
           </div>
           <h2 className="judulPopUp"> { isDataJudulPopUp } </h2>
-          <div> { isDataDeskripsiPopUp } </div>
+          <div className="deskripsiPopUp"> { isDataDeskripsiPopUp } </div>
         </div>
       </div> }
     </div>
