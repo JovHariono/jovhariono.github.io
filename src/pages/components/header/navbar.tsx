@@ -48,7 +48,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                 PAST EVENT
               </Link>
               <Link className="menu-item" href="/ourpartner">
-                OUR EVENT
+                OUR PARTNER
               </Link>
             </Menu>
           </div>
