@@ -1,49 +1,103 @@
-import * as React from 'react';
-import Image from 'next/image';
-// import {Link} from 'react-scroll';
-import Link from 'next/link';
+import * as React from "react";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Squash as Hamburger } from "hamburger-react";
+import { slide as Menu } from "react-burger-menu";
 
-import Mudkip from '../../../../public/assets/mudkip.jpg';
-import LogoSod from "../../../../public/assets/LogoSod.png"
+import Mudkip from "../../../../public/assets/mudkip.jpg";
+import LogoSod from "../../../../public/assets/LogoSod.png";
 
-interface INavbarProps {
-}
+interface INavbarProps {}
 
 const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
+  const handleResize = () => {
+    console.log("im here");
+    if (window.innerWidth <= 900) {
+      setIsMobile(true);
+    } else if (window.innerWidth >= 900) {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    if (window.innerWidth <= 900) {
+      setIsMobile(true);
+    }
+    window.addEventListener("resize", handleResize);
+    console.log(isMobile);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className='navbar'>
-        <Link href="/" className='navbar-img'>
-            <Image className='imgNav' src={LogoSod} alt='unknown'/>
-        </Link>
-        <div className='navvar-content'>
-        <ul className="ul-bar">
-          <li className="li-bar">
-            <Link className="link" href="/" color="white">
-              HOME
+    <div className="containerNav">
+      {isMobile ? (
+        <div className="navbarMobile">
+          <div className="burgerBarNav">
+            <Menu>
+              <Link id="home" className="menu-item" href="/">
+                HOME
+              </Link>
+              <Link className="menu-item" href="/ourbrand">
+                OUR BRAND
+              </Link>
+              <Link className="menu-item" href="/pastevent">
+                PAST EVENT
+              </Link>
+              <Link className="menu-item" href="/ourpartner">
+                OUR EVENT
+              </Link>
+            </Menu>
+          </div>
+          <div className="navbarMobileImg">
+            <Link href="/" className="navbar-img">
+              <Image className="imgNav" src={LogoSod} alt="unknown" />
             </Link>
-          </li>
-          <li className="li-bar">
-            <Link className="linkabout" href="https://jovhariono.github.io/#about-us" color="white">
-              ABOUT US
-            </Link>
-          </li>
-          <li className="li-bar">
-            <Link className="link" href="/ourbrand" color="white">
-              OUR BRAND
-            </Link>
-          </li>
-          <li className="li-bar">
-            <Link className="link" href="/pastevent" color="white">
-              PAST EVENTS
-            </Link>
-          </li>
-          <li className="li-bar">
-            <Link className="link" href="/ourpartner">
-              OUR PARTNER
-            </Link>
-          </li>
-        </ul>
+          </div>
         </div>
+      ) : (
+        <div className="navbar">
+          <Link href="/" className="navbar-img">
+            <Image className="imgNav" src={LogoSod} alt="unknown" />
+          </Link>
+          <div className="navvar-content">
+            <ul className="ul-bar">
+              <li className="li-bar">
+                <Link className="link" href="/" color="white">
+                  HOME
+                </Link>
+              </li>
+              <li className="li-bar">
+                <Link
+                  className="linkabout"
+                  href="https://jovhariono.github.io/#about-us"
+                  color="white"
+                >
+                  ABOUT US
+                </Link>
+              </li>
+              <li className="li-bar">
+                <Link className="link" href="/ourbrand" color="white">
+                  OUR BRAND
+                </Link>
+              </li>
+              <li className="li-bar">
+                <Link className="link" href="/pastevent" color="white">
+                  PAST EVENTS
+                </Link>
+              </li>
+              <li className="li-bar">
+                <Link className="link" href="/ourpartner">
+                  OUR PARTNER
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

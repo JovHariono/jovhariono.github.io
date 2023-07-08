@@ -67,6 +67,10 @@ h3 {
   /* padding-left: 2rem; */
 }
 
+.containerNav{
+  width: 100vw;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -74,6 +78,107 @@ h3 {
   background-color: #22404a;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.navbarMobile{
+  background-color: #22404a;
+  height: 6rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.navbarContent{
+  display: flex;
+}
+
+.menuNav{
+  display: flex;
+  background-color: #22404a;
+  color: white;
+  height: 3rem;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+  color: white;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #22404a;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: white;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: white;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  font-family: "Days One", sans-serif;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item{
+  text-decoration: none;
+  color: white;
+  padding-bottom: 1rem;
+
+}
+
+.navbarMobileImg{
+  display: flex;
+  height: 6rem;
 }
 
 .navbar-img {
@@ -86,6 +191,7 @@ h3 {
   height: auto;
   /* object-fit: contain; */
 }
+
 
 .seperator {
   background-color: #e5dcc8;
@@ -574,21 +680,21 @@ h3 {
   animation-fill-mode: both;
 }
 
-.containerPopUpBrand{
+.containerPopUpBrand {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
 }
 
-.containerImagePopUp{
+.containerImagePopUp {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
 }
 
-.imagePopUp{
+.imagePopUp {
   width: 20rem;
   height: 20rem;
   display: flex;
@@ -596,21 +702,21 @@ h3 {
   align-items: center;
 }
 
-.judulPopUp{
+.judulPopUp {
   padding-bottom: 0.2rem;
 }
 
-.containerButtonPopUp{
+.containerButtonPopUp {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 0.5rem;
 }
 
-.buttonPopUp:hover{
+.buttonPopUp:hover {
   cursor: pointer;
 }
 
-.buttonPopUp{
+.buttonPopUp {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -653,6 +759,7 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: #e4dccf;
+  /* background-color: rgba(228, 220, 207, 0.5); */
   color: #22404a;
   gap: 15rem;
   width: 100%;
@@ -741,7 +848,7 @@ h3 {
 /* Footer */
 
 @media only screen and (max-width: 600px) {
-  html{
+  html {
     font-size: 15px;
   }
 
@@ -757,43 +864,95 @@ h3 {
     flex-direction: column;
   }
 
-  .contentOurBrand{
+  .contentOurBrand {
     flex-direction: column;
   }
 
-  .containerCounterUp{
+  .containerCounterUp {
     gap: 4rem;
     flex-wrap: wrap;
   }
 
-  .countUpNum{
+  .countUpNum {
     font-size: 2rem;
   }
 
-  .contentPastEvents{
-
+  .contentPastEvents {
   }
 
-  .containerEvent{
+  .containerEvent {
     width: 50%;
     height: 16rem;
   }
 
-  .counterItem{
+  .counterItem {
     width: 40%;
   }
 
-  .imgEvent{
-
+  .imgEvent {
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .containerVideo{
+  .containerVideo {
     width: 47%;
   }
 
-  .judulVideo{
+  .judulVideo {
     font-size: 14px;
+  }
+
+  .containerCounterUp{
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counterItem {
+    width: 20%;
+  }
+  
+  .countUpNum{
+    font-size: 2.5rem;
+  }
+
+  .containerEvent{
+    height: 16rem;
+  }
+
+  .contentOurBrand{
+    /* justify-content: center; */
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .containerBrand{
+    width: 27%;
+  }
+
+  .judulBrand{
+    font-size: 1rem;
+  }
+
+  .menu-item{
+    font-size: 1rem;
+  }
+
+  .popUpBrand {
+    position: fixed;
+    top: 7%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    padding-top: 2rem;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
   }
 }
