@@ -617,6 +617,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .contentOurBrand {
   display: flex;
   align-items: center;
+  background-image: url("../../public/assets/backgroundourbrand.png");
   flex-wrap: wrap;
   gap: 4rem;
   padding-left: 15rem;
