@@ -1068,7 +1068,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .popUpBrand {
     position: fixed;
-    top: 20%;
+    top: 13%;
     left: 14%;
     transform: translate(-50%, -50%);
     width: 300px;
