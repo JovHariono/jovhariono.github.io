@@ -172,9 +172,9 @@ const OurPartner: React.FunctionComponent<IOurPartnerProps> = (props) => {
         <div className="seperator"></div>
       </div>
       <div className="partnerContent">
-        { partners.map((partner) => {
+        { partners.map((partner, index) => {
           return(
-            <Partner judul={partner.judul} gambar={partner.gambar}/>
+            <Partner key={index} judul={partner.judul} gambar={partner.gambar}/>
           )
         }) }
       </div>
