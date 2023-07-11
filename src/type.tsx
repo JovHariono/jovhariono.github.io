@@ -6,4 +6,8 @@ export interface BrandType {
   imagePopup: StaticImageData[];
   judulPopUp: string;
   deskripsiPopUp: string;
+  instagram: string;
+  twitter: string;
+  tiktok: string;
+  youtube: string;
 }
