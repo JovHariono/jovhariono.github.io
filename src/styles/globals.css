@@ -23,30 +23,36 @@ hr {
 
 div {
   font-family: "Literata", sans-serif;
+  src: url("../../public/assets/font/Literata-VariableFont_opsz\,wght.ttf");
 }
 
 p {
   font-family: "Literata", sans-serif;
   font-size: 1.3rem;
+  src: url("../../public/assets/font/Literata-VariableFont_opsz\,wght.ttf");
 }
 
 h1 {
   font-family: "Days One", sans-serif;
+  src: url("../../public/assets/font/DaysOne-Regular.ttf");
 }
 
 h2 {
   font-family: "Days One", sans-serif;
+  src: url("../../public/assets/font/DaysOne-Regular.ttf");
 }
 
 h3 {
   font-family: "Days One", sans-serif;
   padding-top: 0.5rem;
+  src: url("../../public/assets/font/DaysOne-Regular.ttf");
 }
 
 .link {
   text-decoration: none;
   color: #ffffff;
   font-family: "Days One", sans-serif;
+  src: url('../../public/assets/font/DaysOne-Regular.ttf')
 }
 
 .linkabout {
@@ -54,6 +60,7 @@ h3 {
   color: #ffffff;
   font-family: "Days One", sans-serif;
   scroll-behavior: smooth;
+  src: url('../../public/assets/font/DaysOne-Regular.ttf')
 }
 
 .container {
@@ -67,7 +74,7 @@ h3 {
   /* padding-left: 2rem; */
 }
 
-.containerNav{
+.containerNav {
   width: 100vw;
 }
 
@@ -80,7 +87,7 @@ h3 {
   padding-right: 2rem;
 }
 
-.navbarMobile{
+.navbarMobile {
   background-color: #22404a;
   height: 6rem;
   width: 100vw;
@@ -89,11 +96,11 @@ h3 {
   padding-right: 2rem;
 }
 
-.navbarContent{
+.navbarContent {
   display: flex;
 }
 
-.menuNav{
+.menuNav {
   display: flex;
   background-color: #22404a;
   color: white;
@@ -162,6 +169,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
   display: inline-block;
   font-family: "Days One", sans-serif;
+  src: url('../../public/assets/font/DaysOne-Regular.ttf')
 }
 
 /* Styling of overlay */
@@ -169,14 +177,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: none !important;
 }
 
-.menu-item{
+.menu-item {
   text-decoration: none;
   color: white;
   padding-bottom: 1rem;
-
 }
 
-.navbarMobileImg{
+.navbarMobileImg {
   display: flex;
   height: 6rem;
 }
@@ -191,7 +198,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   height: auto;
   /* object-fit: contain; */
 }
-
 
 .seperator {
   background-color: #e5dcc8;
@@ -731,7 +737,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-decoration: none;
 }
 
-.containerIconPopup{
+.containerIconPopup {
   padding-top: 1rem;
   gap: 1rem;
   display: flex;
@@ -739,7 +745,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   align-items: center;
 }
 
-.iconPopUp{
+.iconPopUp {
   font-size: 1.5rem;
   color: black;
 }
@@ -808,7 +814,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Past Event */
 
 /* Our Partner */
-.partnerContent{
+.partnerContent {
   padding-top: 2rem;
   background-color: #e5dcc8;
   display: flex;
@@ -821,7 +827,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   animation-fill-mode: both;
 }
 
-.containerPartner{
+.containerPartner {
   width: 12%;
   display: flex;
   flex-direction: column;
@@ -829,11 +835,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   align-items: center;
 }
 
-.imagePartner{
+.imagePartner {
   width: 10rem;
   height: 10rem;
 }
-
 
 /* Our Partner */
 
@@ -870,6 +875,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding-bottom: 0.2rem;
   padding-top: 0.2rem;
   text-decoration: underline;
+  src: url('../../public/assets/font/DaysOne-Regular.ttf')
 }
 
 .contentFooter:hover {
@@ -882,6 +888,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding-top: 0.2rem;
   text-decoration: underline;
   transition: 0.5s ease-in-out;
+  src: url('../../public/assets/font/DaysOne-Regular.ttf')
 }
 
 .imgFooter {
@@ -908,7 +915,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-size: 14px;
   }
 
-  .containerCounterUp{
+  .containerCounterUp {
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
@@ -917,30 +924,30 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .counterItem {
     width: 20%;
   }
-  
-  .countUpNum{
+
+  .countUpNum {
     font-size: 2.5rem;
   }
 
-  .containerEvent{
+  .containerEvent {
     height: 16rem;
   }
 
-  .contentOurBrand{
+  .contentOurBrand {
     /* justify-content: center; */
     padding-left: 4rem;
     padding-right: 4rem;
   }
 
-  .containerBrand{
+  .containerBrand {
     width: 27%;
   }
 
-  .judulBrand{
+  .judulBrand {
     font-size: 1rem;
   }
 
-  .menu-item{
+  .menu-item {
     font-size: 1rem;
   }
 
@@ -969,23 +976,21 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-size: 15px;
   }
 
-  .imgHome{
-    
+  .imgHome {
   }
 
-  .subHeader{
-    
+  .subHeader {
   }
 
   .containerVideo {
     width: 100%;
   }
 
-  .containerBrand{
+  .containerBrand {
     width: 100%;
   }
 
-  .judulBrand{
+  .judulBrand {
     font-size: 1.5rem;
   }
 
@@ -1024,7 +1029,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .counterItem {
     width: 40%;
-    
   }
 
   .imgEvent {
@@ -1049,24 +1053,24 @@ Note: Beware of modifying this element as it can break the animations - you shou
     animation-fill-mode: both;
   }
 
-  .imagePopUp{
+  .imagePopUp {
     height: 14rem;
   }
 
-  .judulPopUp{
+  .judulPopUp {
     font-size: 1rem;
   }
 
-  .deskripsiPopUp{
+  .deskripsiPopUp {
     font-size: 0.9rem;
   }
 
-  .partnerContent{
+  .partnerContent {
     padding-left: 2.5rem;
     padding-right: 0;
   }
 
-  .containerPartner{
+  .containerPartner {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -1074,7 +1078,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     align-items: center;
   }
 
-  .imagePartner{
+  .imagePartner {
     width: 6rem;
     height: 6rem;
   }
