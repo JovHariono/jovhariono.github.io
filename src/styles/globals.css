@@ -10,6 +10,9 @@ body {
 @font-face{
   font-family: "Literata", sans-serif;
   src: url("../../public/assets/font/Literata-VariableFont_opsz\,wght.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Days One";
   src: url("/path/to/fonts/DaysOne.ttf") format("truetype");
 }
