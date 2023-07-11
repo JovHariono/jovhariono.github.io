@@ -992,6 +992,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
    font-size: 0.9rem;
   }
 
+  .containerVideoHome{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
