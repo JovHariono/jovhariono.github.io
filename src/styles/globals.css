@@ -23,36 +23,36 @@ hr {
 
 div {
   font-family: "Literata", sans-serif;
-  src: url("../../public/assets/font/Literata-VariableFont_opsz\,wght.ttf");
+  src: url("../../public/assets/font/Literata-VariableFont_opsz\,wght.ttf") format("truetype");
 }
 
 p {
   font-family: "Literata", sans-serif;
   font-size: 1.3rem;
-  src: url("../../public/assets/font/Literata-VariableFont_opsz\,wght.ttf");
+  src: url("../../public/assets/font/Literata-VariableFont_opsz\,wght.ttf") format("truetype");
 }
 
 h1 {
   font-family: "Days One", sans-serif;
-  src: url("../../public/assets/font/DaysOne-Regular.ttf");
+  src: url("../../public/assets/font/DaysOne-Regular.ttf") format("truetype");
 }
 
 h2 {
   font-family: "Days One", sans-serif;
-  src: url("../../public/assets/font/DaysOne-Regular.ttf");
+  src: url("../../public/assets/font/DaysOne-Regular.ttf") format("truetype");
 }
 
 h3 {
   font-family: "Days One", sans-serif;
   padding-top: 0.5rem;
-  src: url("../../public/assets/font/DaysOne-Regular.ttf");
+  src: url("../../public/assets/font/DaysOne-Regular.ttf") format("truetype");
 }
 
 .link {
   text-decoration: none;
   color: #ffffff;
   font-family: "Days One", sans-serif;
-  src: url('../../public/assets/font/DaysOne-Regular.ttf')
+  src: url('../../public/assets/font/DaysOne-Regular.ttf') format("truetype")
 }
 
 .linkabout {
@@ -60,7 +60,7 @@ h3 {
   color: #ffffff;
   font-family: "Days One", sans-serif;
   scroll-behavior: smooth;
-  src: url('../../public/assets/font/DaysOne-Regular.ttf')
+  src: url('../../public/assets/font/DaysOne-Regular.ttf') format("truetype")
 }
 
 .container {
@@ -169,7 +169,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
   display: inline-block;
   font-family: "Days One", sans-serif;
-  src: url('../../public/assets/font/DaysOne-Regular.ttf')
+  src: url('../../public/assets/font/DaysOne-Regular.ttf') format("truetype")
 }
 
 /* Styling of overlay */
@@ -875,7 +875,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding-bottom: 0.2rem;
   padding-top: 0.2rem;
   text-decoration: underline;
-  src: url('../../public/assets/font/DaysOne-Regular.ttf')
+  src: url('../../public/assets/font/DaysOne-Regular.ttf') format("truetype")
 }
 
 .contentFooter:hover {
@@ -888,7 +888,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding-top: 0.2rem;
   text-decoration: underline;
   transition: 0.5s ease-in-out;
-  src: url('../../public/assets/font/DaysOne-Regular.ttf')
+  src: url('../../public/assets/font/DaysOne-Regular.ttf') format("truetype")
 }
 
 .imgFooter {
