@@ -60,7 +60,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       gambar: Header1,
     },
     {
-      link: '/',
+      link: 'https://jovhariono.github.io/',
       gambar: Header2,
     },
   ];
@@ -71,7 +71,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       gambar: HeaderM1,
     },
     {
-      link: '/',
+      link: 'https://jovhariono.github.io/',
       gambar: HeaderM2,
     },
   ];
