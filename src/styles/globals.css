@@ -1082,4 +1082,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 6rem;
     height: 6rem;
   }
+
+  .containerFooter{
+    padding-right: 1rem;
+  }
 }
