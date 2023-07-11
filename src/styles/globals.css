@@ -969,6 +969,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
     animation-name: fadeInUp;
     animation-fill-mode: both;
   }
+
+  .partnerContent{
+    padding-left: 2rem;
+  }
+
+  .containerPartner{
+    width: 20%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1024,7 +1032,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .containerEvent {
     width: 50%;
-    height: 16rem;
+    height: 13.5rem;
   }
 
   .counterItem {
@@ -1066,12 +1074,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .partnerContent {
-    padding-left: 2.5rem;
+    padding-left: 1.5rem;
     padding-right: 0;
   }
 
   .containerPartner {
-    width: 20%;
+    width: 23.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
