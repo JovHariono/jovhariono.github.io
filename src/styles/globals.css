@@ -1008,6 +1008,26 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-size: 15px;
   }
 
+  h1{
+    font-size: 1.8rem;
+  }
+
+  h2{
+    font-size: 1.6rem;
+  }
+
+  h3{
+    font-size: 1.2rem;
+  }
+
+  .textJudul{
+    font-size: 1.6rem;
+  }
+
+  .textContent{
+    font-size: 1rem;
+  }
+
   .imgHome {
   }
 
@@ -1120,6 +1140,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .textContent{
+    width: 60%;
+  }
+
+  .textValue{
     width: 80%;
   }
   
