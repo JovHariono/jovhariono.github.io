@@ -60,7 +60,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       gambar: Header1,
     },
     {
-      url: '',
+      url: '/',
       gambar: Header2,
     },
   ];
@@ -71,7 +71,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       gambar: HeaderM1,
     },
     {
-      url: '',
+      url: '/',
       gambar: HeaderM2,
     },
   ];
