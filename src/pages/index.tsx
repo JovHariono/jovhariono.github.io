@@ -38,15 +38,15 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
   const handleResize = () => {
     console.log("im here");
-    if (window.innerWidth <= 400) {
+    if (window.innerWidth <= 450) {
       setIsMobile(true);
-    } else if (window.innerWidth >= 400) {
+    } else if (window.innerWidth >= 450) {
       setIsMobile(false);
     }
   };
 
   useEffect(() => {
-    if (window.innerWidth <= 400) {
+    if (window.innerWidth <= 450) {
       setIsMobile(true);
     }
     window.addEventListener("resize", handleResize);
