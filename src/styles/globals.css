@@ -14,7 +14,7 @@ body {
 
 @font-face {
   font-family: "Days One";
-  src: url("/path/to/fonts/DaysOne.ttf") format("truetype");
+  src: url("../../public/assets/font/DaysOne-Regular.ttf") format("truetype");
 }
 
 img {
