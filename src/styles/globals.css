@@ -979,6 +979,21 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
+@media only screen and (max-width: 810px){
+  .contentOurBrand{
+    padding-left: 4rem;
+  }
+
+  .containerBrand{
+    width: 26%;
+  }
+
+  .judulBrand{
+   font-size: 0.9rem;
+  }
+
+}
+
 @media only screen and (max-width: 600px) {
   html {
     font-size: 15px;
