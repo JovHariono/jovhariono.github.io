@@ -977,6 +977,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .containerPartner{
     width: 20%;
   }
+
+  .textContent{
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 810px){
@@ -1113,5 +1117,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .containerFooter{
     padding-right: 1rem;
+  }
+
+  .textContent{
+    width: 80%;
+  }
+  
+  .containerHomeValue{
+    padding-top: 0rem;
+    gap: 0rem;
   }
 }
