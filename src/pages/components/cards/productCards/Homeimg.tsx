@@ -4,13 +4,13 @@ import * as React from 'react';
 import Link from 'next/link';
 
 interface IHomeimgProps {
-    url: string;
+    link: string;
     gambar: StaticImageData;
 }
 
 const Homeimg: React.FunctionComponent<IHomeimgProps> = (props) => {
   return (
-    <Link className='gambarHome' href={ props.url }>
+    <Link className='gambarHome' href={ props.link }>
         <Image className='imgHome' src={props.gambar} alt='unknown' />
     </Link>
   );

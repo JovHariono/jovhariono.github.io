@@ -56,22 +56,22 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
   const Homeimgs = [
     {
-      url: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
+      link: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
       gambar: Header1,
     },
     {
-      url: '/',
+      link: '/',
       gambar: Header2,
     },
   ];
 
   const HomeimgMs = [
     {
-      url: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
+      link: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
       gambar: HeaderM1,
     },
     {
-      url: '/',
+      link: '/',
       gambar: HeaderM2,
     },
   ];
@@ -199,7 +199,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
               {HomeimgMs.map((homeimg, index) => {
             return (
               <SwiperSlide key={index}>
-                <Homeimg gambar={homeimg.gambar} url={homeimg.url} />
+                <Homeimg gambar={homeimg.gambar} link={homeimg.link} />
               </SwiperSlide>
             );
           })}
@@ -209,7 +209,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
               {Homeimgs.map((homeimg, index) => {
                 return (
                   <SwiperSlide key={index}>
-                    <Homeimg gambar={homeimg.gambar} url={homeimg.url} />
+                    <Homeimg gambar={homeimg.gambar} link={homeimg.link} />
                   </SwiperSlide>
                 );
               })}
