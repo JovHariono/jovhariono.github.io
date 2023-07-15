@@ -930,13 +930,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .containerEvent {
-    height: 16rem;
+    height: 12rem;
   }
 
   .contentOurBrand {
     /* justify-content: center; */
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .containerValue{
+    width: 30%;
+    height: 15rem;
   }
 
   .containerBrand {
@@ -954,7 +959,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .popUpBrand {
     position: fixed;
     top: 10%;
-    left: 16%;
+    left: 11%;
     transform: translate(-50%, -50%);
     width: 600px;
     padding: 50px;
@@ -971,7 +976,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .partnerContent{
-    padding-left: 2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 
   .containerPartner{
@@ -981,9 +987,21 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .textContent{
     width: 60%;
   }
+
+  .containerHomeValue{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .judulValue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-@media only screen and (max-width: 810px){
+@media only screen and (max-width: 815px){
   .contentOurBrand{
     padding-left: 4rem;
   }

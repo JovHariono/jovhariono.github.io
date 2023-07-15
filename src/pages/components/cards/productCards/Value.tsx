@@ -13,7 +13,7 @@ const Value: React.FunctionComponent<IValueProps> = (props) => {
     <div className='containerValue'>
         <div className='faValue'> <FontAwesomeIcon icon={props.gambar} /> </div>
         <div className="seperator"></div>
-        <h3> {props.judul} </h3>
+        <h3 className='judulValue'> {props.judul} </h3>
         <div className='textValue'> {props.text} </div>
     </div>
   );
