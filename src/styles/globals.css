@@ -1029,6 +1029,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 @media only screen and (max-width: 768px) {
+  .subHeader2{
+    height: 15rem;
+  }
+
+  .containerCounterUp{
+    height: 12rem;
+  }
+
+  .countUpNum{
+    font-size: 3rem;
+  }
+  
+  .pCounter{
+    font-size: 1.5rem;
+  }
+
   .popUpBrand{
     left: 11%;
   }
@@ -1037,10 +1053,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
     height: 12rem;
   }
 
+  .containerBrand{
+    width: 26.5%;
+  }
+
   .partnerContent{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .judulBrand{
+    font-size: 0.85rem;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {

@@ -59,25 +59,25 @@ const PastEvent: React.FunctionComponent<IPastEventProps> = (props) => {
           <h1 className="countUpNum">
             <CountUp start={0} end={6} duration={7} />
           </h1>
-          <p>Main Event</p>
+          <p className="pCounter">Main Event</p>
         </div>
         <div className="counterItem">
           <h1 className="countUpNum">
             <CountUp start={0} end={200} duration={3} /> +
           </h1>
-          <p>Partners</p>
+          <p className="pCounter">Partners</p>
         </div>
         <div className="counterItem">
           <h1 className="countUpNum">
             <CountUp start={0} end={30} duration={4} /> +
           </h1>
-          <p>Performers</p>
+          <p className="pCounter">Performers</p>
         </div>
         <div className="counterItem">
           <h1 className="countUpNum">
             <CountUp start={0} end={500} duration={4} separator="," /> K
           </h1>
-          <p>Tickets Sold</p>
+          <p className="pCounter">Tickets Sold</p>
         </div>
       </div>
       <div className="contentPastEvents">
