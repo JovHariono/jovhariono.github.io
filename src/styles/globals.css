@@ -1054,7 +1054,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .containerBrand{
-    width: 26.5%;
+    width: 26%;
   }
 
   .partnerContent{
@@ -1063,7 +1063,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .judulBrand{
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
 }
