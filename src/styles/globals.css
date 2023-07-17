@@ -1110,11 +1110,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .containerBrand {
-    width: 100%;
+    width: 90%;
   }
 
   .judulBrand {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .containerHomeValue {
@@ -1231,4 +1231,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 18rem !important;
     height: 18rem !important;
   }
+
+  
 }
