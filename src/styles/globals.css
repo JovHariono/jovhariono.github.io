@@ -1068,9 +1068,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 760px){
   .partnerContent{
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-right: 1rem;
   }
 
