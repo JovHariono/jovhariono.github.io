@@ -72,11 +72,6 @@ h3 {
   height: 100vh;
 }
 
-.header {
-  /* padding-right: 2rem; */
-  /* padding-left: 2rem; */
-}
-
 .containerNav {
   width: 100vw;
 }
@@ -940,7 +935,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .contentOurBrand {
-    /* justify-content: center; */
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -1099,12 +1093,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-size: 1rem;
   }
 
-  .imgHome {
-  }
-
-  .subHeader {
-  }
-
   .containerVideo {
     width: 100%;
   }
@@ -1145,9 +1133,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-size: 2rem;
   }
 
-  .contentPastEvents {
-  }
-
   .containerEvent {
     width: 50%;
     height: 13.5rem;
@@ -1156,10 +1141,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .counterItem {
     width: 40%;
   }
-
-  .imgEvent {
-  }
-
+  
   .popUpBrand {
     position: fixed;
     top: 13%;
