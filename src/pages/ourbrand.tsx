@@ -172,7 +172,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
                   }}
                   pagination={{ clickable: true }}
                   freeMode={true}
-                  navigation={true}
+                  // navigation={true}
                   modules={[Autoplay, Pagination, Navigation, FreeMode]}
                   className="mySwiper"
                 >
