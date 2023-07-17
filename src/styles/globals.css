@@ -898,7 +898,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   align-items: center;
 }
 
-.swiper-slide img {
+.containerImagePopUp .swiper-slide img {
   display: flex;
   justify-content: center;
   align-items: center;
