@@ -167,7 +167,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
                   spaceBetween={0}
                   slidesPerView={1}
                   autoplay={{
-                    delay: 2500,
+                    delay: 1000,
                     disableOnInteraction: false,
                   }}
                   pagination={{ clickable: true }}
