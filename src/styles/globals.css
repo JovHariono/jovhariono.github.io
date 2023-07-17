@@ -253,27 +253,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   border-radius: 5%;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  background: #b2bcbb;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .gambarHome {
   display: flex;
   justify-content: center;
@@ -287,13 +266,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 100%;
   /* object-fit: contain; */
   /* image-rendering: pixelated; */
-}
-
-.mySwiper {
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: center;
-  text-align: center;
 }
 
 .containerHomeValue {
@@ -320,10 +292,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   animation-delay: 0.5s;
   animation-name: fadeInUp;
   animation-fill-mode: both; */
-}
-
-.swiper-slide swiper-slide-active {
-  margin-right: 0 !important;
 }
 
 .subHeader2 {
@@ -659,7 +627,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .judulBrand {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding-bottom: 0.4rem;
   color: #22404a;
 }
@@ -700,16 +668,25 @@ Note: Beware of modifying this element as it can break the animations - you shou
   justify-content: center;
 }
 
+.containerUtamaImagePopUp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .containerImagePopUp {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
+  width: 20rem !important;
+  height: 20rem !important;
 }
 
 .imagePopUp {
-  width: 20rem;
-  height: 20rem;
+  width: 20rem !important;
+  height: 20rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -901,10 +878,39 @@ Note: Beware of modifying this element as it can break the animations - you shou
   /* text-decoration: underline; */
 }
 
-.deskripsiFooter {
+/* Footer */
+
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-/* Footer */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 100%;
+
+  /* Center slide text vertically */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 20rem !important; 
+  height: 20rem !important;
+  padding: 0rem !important;
+  margin: 0rem !important;
+}
+/* swiper */
 
 @media only screen and (max-width: 900px) {
   .containerVideo {
@@ -1001,7 +1007,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
-@media only screen and (max-width: 815px){
+@media only screen and (max-width: 816px){
   .contentOurBrand{
     padding-left: 4rem;
   }
@@ -1024,11 +1030,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .popUpBrand{
-    left: 13.5%;
+    left: 13%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
   .subHeader2{
     height: 15rem;
   }
@@ -1154,12 +1160,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .popUpBrand {
     position: fixed;
     top: 13%;
-    left: 14%;
+    left: 11.5%;
     transform: translate(-50%, -50%);
     width: 300px;
-    padding: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;  
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     background: white;
     backdrop-filter: blur(8px);
@@ -1168,10 +1175,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     animation-delay: 0.5s;
     animation-name: fadeInUp;
     animation-fill-mode: both;
-  }
-
-  .imagePopUp {
-    height: 14rem;
   }
 
   .judulPopUp {
@@ -1215,5 +1218,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .containerHomeValue{
     padding-top: 0rem;
     gap: 0rem;
+  }
+
+  .containerImagePopUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 18rem !important;
+    height: 18rem !important;
   }
 }
