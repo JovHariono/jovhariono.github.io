@@ -14,8 +14,12 @@ import "swiper/css/navigation";
 import Mudkip2 from "../../public/assets/mudkip2.jpg";
 import Header1 from "../../public/assets/Header1.png";
 import Header2 from "../../public/assets/Header2.png";
+import Header3 from "../../public/assets/Header3.png";
+import Header4 from "../../public/assets/Header4.png";
 import HeaderM1 from "../../public/assets/HeaderM1.jpeg";
 import HeaderM2 from "../../public/assets/HeaderM2.png";
+import HeaderM3 from "../../public/assets/HeaderM3.png";
+import HeaderM4 from "../../public/assets/HeaderM4.png";
 import sampleHeader from "../../public/assets/sampleHeader.png";
 import sampleHeader2 from "../../public/assets/sampleHeader2.png";
 import Homeimg from "./components/cards/productCards/Homeimg";
@@ -63,6 +67,14 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       link: 'https://jovhariono.github.io/',
       gambar: Header2,
     },
+    {
+      link: 'https://www.loket.com/event/inquisitiveliveinjakarta',
+      gambar: Header3,
+    },
+    {
+      link: 'https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby',
+      gambar: Header4,
+    },
   ];
 
   const HomeimgMs = [
@@ -73,6 +85,14 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     {
       link: 'https://jovhariono.github.io/',
       gambar: HeaderM2,
+    },
+    {
+      link: 'https://www.loket.com/event/inquisitiveliveinjakarta',
+      gambar: HeaderM3,
+    },
+    {
+      link: 'https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby',
+      gambar: HeaderM4,
     },
   ];
 
