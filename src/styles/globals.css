@@ -460,6 +460,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .faValue {
   font-size: 4rem;
+  width: 5rem;
 }
 
 .textValue {
@@ -871,6 +872,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .textFooter {
   font-size: 1rem;
   /* text-decoration: underline; */
+}
+
+.icon{
+  width: 1.3rem;
 }
 
 /* Footer */

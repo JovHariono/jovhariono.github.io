@@ -20,11 +20,11 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
         <div className="contentFooter">
           <div className="containerContentFooter">
             <Link className="contentFooter" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpZxJxjpDPFfBTMQFkrzvGQnNKmRgBbQbnTqPMccKMSQzWbtqZCMPpgFCTGVvFlrJnsWL">
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon className="icon" icon={faEnvelope} />
               <div>hello@sodindonesia.com</div>
             </Link>
             <Link href="https://www.instagram.com/sod.group/" className="contentFooter">
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon icon={faInstagram} className="icon" />
               <div>@sod.group</div>
             </Link>
           </div>
