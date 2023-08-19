@@ -7,6 +7,7 @@ import { slide as Menu } from "react-burger-menu";
 
 import Mudkip from "../../../../public/assets/mudkip.jpg";
 import LogoSod from "../../../../public/assets/LogoSod.png";
+import Head from "next/head";
 
 interface INavbarProps {}
 
@@ -34,6 +35,10 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
 
   return (
     <div className="containerNav">
+      <Head>
+        <title>Sounds of Downtown - sod</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+      </Head>
       {isMobile ? (
         <div className="navbarMobile">
           <div className="burgerBarNav">
@@ -54,14 +59,22 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
           </div>
           <div className="navbarMobileImg">
             <Link href="/" className="navbar-img">
-              <Image className="imgNav" src={LogoSod} alt="Sounds of Downtown - sod" />
+              <Image
+                className="imgNav"
+                src={LogoSod}
+                alt="Sounds of Downtown - sod"
+              />
             </Link>
           </div>
         </div>
       ) : (
         <div className="navbar">
           <Link href="/" className="navbar-img">
-            <Image className="imgNav" src={LogoSod} alt="Sounds of Downtown - sod" />
+            <Image
+              className="imgNav"
+              src={LogoSod}
+              alt="Sounds of Downtown - sod"
+            />
           </Link>
           <div className="navvar-content">
             <ul className="ul-bar">
