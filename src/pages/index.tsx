@@ -200,6 +200,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     <div className="container">
       <Head>
         <title>Sounds of Downtown - sod</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
       </Head>
 
       <div className="header">
