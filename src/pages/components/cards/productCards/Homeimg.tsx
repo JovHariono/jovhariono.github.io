@@ -11,7 +11,7 @@ interface IHomeimgProps {
 const Homeimg: React.FunctionComponent<IHomeimgProps> = (props) => {
   return (
     <Link className='gambarHome' href={props.link ?? ''}>
-        <Image className='imgHome' src={props.gambar} alt='unknown' />
+        <Image className='imgHome' src={props.gambar} alt='Sounds of Downtown - sod' />
     </Link>
   );
 };

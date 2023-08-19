@@ -9,7 +9,7 @@ interface IEventProps {
 const Event: React.FunctionComponent<IEventProps> = (props) => {
   return (
     <div className='containerEvent'>
-        <Image className='imgEvent' src={props.gambar} alt='unknown'/>
+        <Image className='imgEvent' src={props.gambar} alt='Sounds of Downtown - sod'/>
     </div>
   );
 };

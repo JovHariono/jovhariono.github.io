@@ -143,7 +143,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
                 onClick={() => togglePop(brand)}
                 key={index}
               >
-                <Image className="imgBrand" src={brand.image} alt="unknown" />
+                <Image className="imgBrand" src={brand.image} alt="Sounds of Downtown - sod" />
                 <h2 className="judulBrand"> {brand.judul} </h2>
                 <div className="seperatorBrand"></div>
               </div>
@@ -181,7 +181,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
                       <Image
                         // className="imagePopUp"
                         src={image ? image : ""}
-                        alt="unknown"
+                        alt="Sounds of Downtown - sod"
                       />
                     </SwiperSlide>
                   ))}
@@ -191,7 +191,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
             {/* <Image
                 className="imagePopUp"
                 src={isDataImagePopUp ? isDataImagePopUp : ""}
-                alt="unknown"
+                alt="Sounds of Downtown - sod"
               /> */}
             <h2 className="judulPopUp"> {isDataJudulPopUp} </h2>
             <div className="deskripsiPopUp"> {isDataDeskripsiPopUp} </div>

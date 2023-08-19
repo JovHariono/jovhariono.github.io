@@ -33,6 +33,7 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { Divide } from "hamburger-react";
+import Head from "next/head";
 
 interface IHomeProps {}
 
@@ -197,6 +198,10 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
   return (
     <div className="container">
+      <Head>
+        <title>Sounds of Downtown - sod</title>
+      </Head>
+
       <div className="header">
         <Navbar />
       </div>

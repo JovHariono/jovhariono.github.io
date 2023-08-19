@@ -13,7 +13,7 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
   return (
     <div className="containerFooter">
       {/* <div className='imgFooter'>
-        <Image src={Mudkip} alt='unknown' />
+        <Image src={Mudkip} alt='Sounds of Downtown - sod' />
         </div> */}
       <div className="deskripsiFooter">
         <h1 className="textFooter">CONTACT US :</h1>

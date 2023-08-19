@@ -11,7 +11,7 @@ const Partner: React.FunctionComponent<IPartnerProps> = (props) => {
   return (
     <div className='containerPartner'>
       {/* <h3 className='textPartner'> { props.judul } </h3> */}
-      <Image className='imagePartner' src={ props.gambar } alt='unknown' />
+      <Image className='imagePartner' src={ props.gambar } alt='Sounds of Downtown - sod' />
     </div>
   );
 };

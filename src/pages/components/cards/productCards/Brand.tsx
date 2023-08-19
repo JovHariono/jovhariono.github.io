@@ -12,7 +12,7 @@ const Brand: React.FunctionComponent<IBrandProps> = (props) => {
 
   return (
     <div className="containerBrand">
-      <Image className="imgBrand" src={props.gambar} alt="unknown" />
+      <Image className="imgBrand" src={props.gambar} alt="Sounds of Downtown - sod" />
       <h2 className="judulBrand"> {props.judul} </h2>
       <div className="seperatorBrand"></div>
     </div>

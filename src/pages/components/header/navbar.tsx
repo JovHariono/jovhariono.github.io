@@ -54,14 +54,14 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
           </div>
           <div className="navbarMobileImg">
             <Link href="/" className="navbar-img">
-              <Image className="imgNav" src={LogoSod} alt="unknown" />
+              <Image className="imgNav" src={LogoSod} alt="Sounds of Downtown - sod" />
             </Link>
           </div>
         </div>
       ) : (
         <div className="navbar">
           <Link href="/" className="navbar-img">
-            <Image className="imgNav" src={LogoSod} alt="unknown" />
+            <Image className="imgNav" src={LogoSod} alt="Sounds of Downtown - sod" />
           </Link>
           <div className="navvar-content">
             <ul className="ul-bar">
