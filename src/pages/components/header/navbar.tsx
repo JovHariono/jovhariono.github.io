@@ -36,7 +36,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
   return (
     <div className="containerNav">
       <Head>
-        <title>Sounds of Downtown - sod</title>
+        <title>Serikat Orang Dalam - sod.group</title>
         <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
       </Head>
       {isMobile ? (

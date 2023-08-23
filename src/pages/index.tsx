@@ -60,18 +60,14 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
   }, []);
 
   const Homeimgs = [
-    {
-      link: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
-      gambar: Header1,
-    },
-    {
-      link: 'https://jovhariono.github.io/',
-      gambar: Header2,
-    },
-    {
-      link: 'https://www.loket.com/event/inquisitiveliveinjakarta',
-      gambar: Header3,
-    },
+    // {
+    //   link: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
+    //   gambar: Header1,
+    // },
+    // {
+    //   link: 'https://www.loket.com/event/inquisitiveliveinjakarta',
+    //   gambar: Header3,
+    // },
     {
       link: 'https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby',
       gambar: Header4,
@@ -79,18 +75,14 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
   ];
 
   const HomeimgMs = [
-    {
-      link: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
-      gambar: HeaderM1,
-    },
-    {
-      link: 'https://jovhariono.github.io/',
-      gambar: HeaderM2,
-    },
-    {
-      link: 'https://www.loket.com/event/inquisitiveliveinjakarta',
-      gambar: HeaderM3,
-    },
+    // {
+    //   link: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
+    //   gambar: HeaderM1,
+    // },
+    // {
+    //   link: 'https://www.loket.com/event/inquisitiveliveinjakarta',
+    //   gambar: HeaderM3,
+    // },
     {
       link: 'https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby',
       gambar: HeaderM4,
@@ -199,7 +191,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
   return (
     <div className="container">
       <Head>
-        <title>Sounds of Downtown - sod</title>
+        <title>Serikat Orang Dalam - sod.group</title>
         <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
       </Head>
 
