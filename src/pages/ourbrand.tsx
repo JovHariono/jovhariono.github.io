@@ -156,10 +156,10 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
         <div className="popUpBrand">
           <div
             className="containerPopUpBrand"
-            onClick={() => setIsClicked(!isClicked)}
+            // onClick={() => setIsClicked(!isClicked)}
           >
             <div className="containerButtonPopUp">
-              <button className="buttonPopUp">X</button>
+              <button className="buttonPopUp" onClick={() => setIsClicked(!isClicked)}>X</button>
             </div>
             <div className="containerUtamaImagePopUp">
               <div className="containerImagePopUp">
