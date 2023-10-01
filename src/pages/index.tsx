@@ -58,31 +58,15 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
   }, []);
 
   const Homeimgs = [
-    // {
-    //   link: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
-    //   gambar: Header1,
-    // },
-    // {
-    //   link: 'https://www.loket.com/event/inquisitiveliveinjakarta',
-    //   gambar: Header3,
-    // },
     {
-      link: 'https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby',
+      link: "https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby",
       gambar: Header4,
     },
   ];
 
   const HomeimgMs = [
-    // {
-    //   link: 'https://www.tiket.com/to-do/sounds-of-downtown-vol5?utm_page=globalSearch&utm_section=globalSearchTyping',
-    //   gambar: HeaderM1,
-    // },
-    // {
-    //   link: 'https://www.loket.com/event/inquisitiveliveinjakarta',
-    //   gambar: HeaderM3,
-    // },
     {
-      link: 'https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby',
+      link: "https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby",
       gambar: HeaderM4,
     },
   ];
@@ -107,28 +91,52 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
   const Videos = [
     {
-      link: "https://www.youtube.com/embed/t7_RI8c3cBw",
-      judul: "SOD VOL 1",
+      link: "https://www.youtube.com/embed/bXZDRqvWNTA?si=7_LlxNVf6XugYznY",
+      judul: "Waku Waku VOL 2",
     },
     {
-      link: "https://www.youtube.com/embed/MqMk6GsGeFI",
-      judul: "SOD VOL 3",
+      link: "https://www.youtube.com/embed/eUsc1hrxCyA?si=A-KEf5nUACoztKLw",
+      judul: "Airplay In Jakarta",
     },
     {
-      link: "https://www.youtube.com/embed/xtT-8Y5fZg4",
-      judul: "SOD VOL 4",
+      link: "https://www.youtube.com/embed/lmvGR8v8pKc?si=FybSA6vLd5wPvJpJ",
+      judul: `Renung Resah Showcase`,
+    },
+    {
+      link: "https://www.youtube.com/embed/xmI2TCLoI6k?si=n_8h-sV6dxS6IFz3",
+      judul: "Bruno Major",
+    },
+    {
+      link: "https://www.youtube.com/embed/cetYc2e-Gac?si=Gf2VbTLvkOYE_kPI",
+      judul: "Inquisitive at Bengkel",
+    },
+    {
+      link: "https://www.youtube.com/embed/zbAcvSQ1TDU?si=HKXxTmG3GushQ96R",
+      judul: "SOD VOL 5",
+    },
+    {
+      link: "https://www.youtube.com/embed/CBDYT21iiPE",
+      judul: "Marvellous Festival",
+    },
+    {
+      link: "https://www.youtube.com/embed/OmgQ0wxYEDg",
+      judul: "Mini Waku Waku",
     },
     {
       link: "https://www.youtube.com/embed/QdErAvz32rE",
       judul: "Misellia Penyendiri Showcase",
     },
     {
-      link: "https://www.youtube.com/embed/OmgQ0wxYEDg",
-      judul: "Mini Waku-Waku",
+      link: "https://www.youtube.com/embed/xtT-8Y5fZg4",
+      judul: "SOD VOL 4",
     },
     {
-      link: "https://www.youtube.com/embed/CBDYT21iiPE",
-      judul: "Marvellous Festival",
+      link: "https://www.youtube.com/embed/MqMk6GsGeFI",
+      judul: "SOD VOL 3",
+    },
+    {
+      link: "https://www.youtube.com/embed/t7_RI8c3cBw",
+      judul: "SOD VOL 1",
     },
   ];
 
@@ -146,46 +154,6 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     return () => clearInterval(intervalId);
   }, []);
 
-  // const formatCountdown = (time: number) => {
-  //   const seconds = Math.floor((time / 1000) % 60);
-  //   const minutes = Math.floor((time / 1000 / 60) % 60);
-  //   const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
-  //   const days = Math.floor((time / (1000 * 60 * 60 * 24)) % 30);
-  //   const months = Math.floor(time / (1000 * 60 * 60 * 24 * 30));
-
-  //   const formattedMonths = months.toString().padStart(2, "0");
-  //   const formattedDays = days.toString().padStart(2, "0");
-  //   const formattedHours = hours.toString().padStart(2, "0");
-  //   const formattedMinutes = minutes.toString().padStart(2, "0");
-  //   const formattedSeconds = seconds.toString().padStart(2, "0");
-
-  //   // return (
-  //   //   <div className="counter">
-  //   //     <div className="counterCountent">
-  //   //       <div className="angkaCounter">{formattedMonths}</div>
-  //   //       <div className="textCounter">MONTHS</div>
-  //   //     </div>
-  //   //     <div className="separatorCounter"> : </div>
-  //   //     <div className="counterCountent">
-  //   //       <div className="angkaCounter">{formattedDays}</div>
-  //   //       <div className="textCounter">DAYS</div>
-  //   //     </div>
-  //   //     <div className="separatorCounter"> : </div>
-  //   //     <div className="counterCountent">
-  //   //       <div className="angkaCounter">{formattedHours}</div>
-  //   //       <div className="textCounter">HOURS</div>
-  //   //     </div>
-  //   //     <div className="separatorCounter"> : </div>
-  //   //     <div className="counterCountent">
-  //   //       <div className="angkaCounter">{formattedSeconds}</div>
-  //   //       <div className="textCounter">SECONDS</div>
-  //   //     </div>
-  //   //   </div>
-  //   // );
-  // };
-
-  // const countdown = formatCountdown(remainingTime);
-
   return (
     <div className="container">
       <Head>
@@ -196,7 +164,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <div className="header">
         <Navbar />
       </div>
-      <div className="subHeader">
+      {/* <div className="subHeader">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
@@ -213,12 +181,12 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           {isMobile ? (
             <div>
               {HomeimgMs.map((homeimg, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <Homeimg gambar={homeimg.gambar} link={homeimg.link} />
-              </SwiperSlide>
-            );
-          })}
+                return (
+                  <SwiperSlide key={index}>
+                    <Homeimg gambar={homeimg.gambar} link={homeimg.link} />
+                  </SwiperSlide>
+                );
+              })}
             </div>
           ) : (
             <div>
@@ -231,15 +199,8 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
               })}
             </div>
           )}
-          {/* {Homeimgs.map((homeimg, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <Homeimg gambar={homeimg.gambar} />
-              </SwiperSlide>
-            );
-          })} */}
         </Swiper>
-      </div>
+      </div> */}
       <div className="aboutUs" id="about-us">
         <div className="contentAboutUs">
           <h1 className="textJudul">ABOUT US</h1>

@@ -14,34 +14,58 @@ import Event5 from "../../public/assets/Event5.png";
 import Event6 from "../../public/assets/Event6.png";
 import Event7 from "../../public/assets/Event7.png";
 import Event8 from "../../public/assets/Event8.png";
+import Event9 from "../../public/assets/Event9.png";
+import Event10 from "../../public/assets/Event10.png";
+import Event11 from "../../public/assets/Event11.png";
+import Event12 from "../../public/assets/Event12.png";
+import Event13 from "../../public/assets/Event13.png";
+import Event14 from "../../public/assets/Event14.png";
 
 interface IPastEventProps {}
 
 const PastEvent: React.FunctionComponent<IPastEventProps> = (props) => {
   const Events = [
     {
-      gambar: Event1,
+      gambar: Event14,
     },
     {
-      gambar: Event2,
+      gambar: Event13,
     },
     {
-      gambar: Event3,
+      gambar: Event12,
     },
     {
-      gambar: Event4,
+      gambar: Event11,
     },
     {
-      gambar: Event5,
+      gambar: Event10,
     },
     {
-      gambar: Event6,
+      gambar: Event9,
+    },
+    {
+      gambar: Event8,
     },
     {
       gambar: Event7,
     },
     {
-      gambar: Event8,
+      gambar: Event6,
+    },
+    {
+      gambar: Event5,
+    },
+    {
+      gambar: Event4,
+    },
+    {
+      gambar: Event3,
+    },
+    {
+      gambar: Event2,
+    },
+    {
+      gambar: Event1,
     },
   ];
 
@@ -57,7 +81,7 @@ const PastEvent: React.FunctionComponent<IPastEventProps> = (props) => {
       <div className="containerCounterUp">
         <div className="counterItem">
           <h1 className="countUpNum">
-            <CountUp start={0} end={6} duration={7} />
+            <CountUp start={0} end={12} duration={7} />
           </h1>
           <p className="pCounter">Main Event</p>
         </div>
@@ -69,13 +93,13 @@ const PastEvent: React.FunctionComponent<IPastEventProps> = (props) => {
         </div>
         <div className="counterItem">
           <h1 className="countUpNum">
-            <CountUp start={0} end={30} duration={4} /> +
+            <CountUp start={0} end={50} duration={4} /> +
           </h1>
           <p className="pCounter">Performers</p>
         </div>
         <div className="counterItem">
           <h1 className="countUpNum">
-            <CountUp start={0} end={500} duration={4} separator="," /> K
+            <CountUp start={0} end={100} duration={4} separator="," /> K
           </h1>
           <p className="pCounter">Tickets Sold</p>
         </div>

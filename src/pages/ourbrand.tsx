@@ -14,6 +14,7 @@ import Brand2 from "../../public/assets/Brand2(2).png";
 import Brand3 from "../../public/assets/Brand3(2).png";
 import Brand4 from "../../public/assets/Brand4(2).png";
 import Brand5 from "../../public/assets/Brand5(2).png";
+import Brand6 from "../../public/assets/Brand6(2).png";
 import sod1 from "../../public/assets/sod1.png";
 import sod2 from "../../public/assets/sod2.png";
 import sod3 from "../../public/assets/sod3.jpeg";
@@ -26,7 +27,6 @@ import waku3 from "../../public/assets/waku3.jpeg";
 import waku4 from "../../public/assets/waku4.png";
 import mls1 from "../../public/assets/mls1.png";
 import mls2 from "../../public/assets/mls2.png";
-
 
 import Footer from "./components/cards/productCards/footer/Footer";
 import { BrandType } from "../type";
@@ -89,18 +89,6 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
       youtube: "",
     },
     {
-      image: Brand4,
-      judul: "Marvellous Festival",
-      imagePopup: [Brand4, mls1, mls2],
-      judulPopUp: "Marvellous Festival",
-      deskripsiPopUp:
-        "Marvellous Fest is a music festival that is the result of a collaboration between PT Serikat Orang Dalam and PT Mitra Literasi Sejahtera, and it will be enlivened by various musicians, both national and local. Marvellous Fest also serves as a platform for various communities to socialize and interact with each other in South Kalimantan, especially in Banjarmasin.",
-      instagram: "https://www.instagram.com/marvellous.fest/",
-      twitter: "",
-      tiktok: "",
-      youtube: "",
-    },
-    {
       image: Brand5,
       judul: "On The Ground",
       imagePopup: [Brand5],
@@ -108,6 +96,30 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
       deskripsiPopUp:
         "A company that focuses on helping to provide and create the best experience for audience through our first-class event handling services.",
       instagram: "https://www.instagram.com/onthegrnd.id/",
+      twitter: "",
+      tiktok: "",
+      youtube: "",
+    },
+    {
+      image: Brand6,
+      judul: "SOD Live",
+      imagePopup: [],
+      judulPopUp: "SOD Live",
+      deskripsiPopUp:
+        "",
+      instagram: "",
+      twitter: "",
+      tiktok: "",
+      youtube: "",
+    },
+    {
+      image: Brand4,
+      judul: "Marvellous Festival",
+      imagePopup: [Brand4, mls1, mls2],
+      judulPopUp: "Marvellous Festival",
+      deskripsiPopUp:
+        "Marvellous Fest is a music festival that is the result of a collaboration between PT Serikat Orang Dalam and PT Mitra Literasi Sejahtera, and it will be enlivened by various musicians, both national and local. Marvellous Fest also serves as a platform for various communities to socialize and interact with each other in South Kalimantan, especially in Banjarmasin.",
+      instagram: "https://www.instagram.com/marvellous.fest/",
       twitter: "",
       tiktok: "",
       youtube: "",
@@ -143,7 +155,11 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
                 onClick={() => togglePop(brand)}
                 key={index}
               >
-                <Image className="imgBrand" src={brand.image} alt="Sounds of Downtown - sod" />
+                <Image
+                  className="imgBrand"
+                  src={brand.image}
+                  alt="Sounds of Downtown - sod"
+                />
                 <h2 className="judulBrand"> {brand.judul} </h2>
                 <div className="seperatorBrand"></div>
               </div>
@@ -159,7 +175,12 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
             // onClick={() => setIsClicked(!isClicked)}
           >
             <div className="containerButtonPopUp">
-              <button className="buttonPopUp" onClick={() => setIsClicked(!isClicked)}>X</button>
+              <button
+                className="buttonPopUp"
+                onClick={() => setIsClicked(!isClicked)}
+              >
+                X
+              </button>
             </div>
             <div className="containerUtamaImagePopUp">
               <div className="containerImagePopUp">
