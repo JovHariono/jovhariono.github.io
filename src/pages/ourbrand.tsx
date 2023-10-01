@@ -103,10 +103,10 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
     {
       image: Brand6,
       judul: "SOD Live",
-      imagePopup: [],
+      imagePopup: [Brand6],
       judulPopUp: "SOD Live",
       deskripsiPopUp:
-        "",
+        "SOD LIVE is here to bridge local communities to musicians to brands through music collective events.",
       instagram: "",
       twitter: "",
       tiktok: "",
