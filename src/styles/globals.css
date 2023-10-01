@@ -70,7 +70,7 @@ h3 {
   width: 100%;
   max-width: 100vw;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .containerNav {
