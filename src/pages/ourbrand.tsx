@@ -25,6 +25,7 @@ import sod8 from "../../public/assets/sod8.jpeg";
 import sod9 from "../../public/assets/sod9.jpeg";
 import sod10 from "../../public/assets/sod10.jpeg";
 import sod11 from "../../public/assets/sod11.jpeg";
+import sod12 from "../../public/assets/sod12.jpeg";
 import waku from "../../public/assets/waku.jpeg";
 import waku2 from "../../public/assets/waku2.jpeg";
 import waku3 from "../../public/assets/waku3.jpeg";
@@ -93,7 +94,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
     {
       image: Brand1,
       judul: "SOD Festival",
-      imagePopup: [Brand1, sod1, sod2, sod3, sod4, sod5, sod6, sod7, sod8, sod9, sod10, sod11],
+      imagePopup: [Brand1, sod1, sod2, sod3, sod4, sod5, sod6, sod7, sod8, sod9, sod10, sod11, sod12],
       judulPopUp: "SOD Festival",
       deskripsiPopUp:
         "Events that are organized by PT. Serikat Orang Dalam (SOD), combining music, arts, foods and fashion in one place.",
