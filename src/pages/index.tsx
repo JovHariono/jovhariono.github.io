@@ -182,7 +182,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <div className="header">
         <Navbar />
       </div>
-      <div className="subHeader">
+      {/* <div className="subHeader">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
@@ -218,7 +218,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
             </div>
           )}
         </Swiper>
-      </div>
+      </div> */}
       <div className="aboutUs" id="about-us">
         <div className="contentAboutUs">
           <h1 className="textJudul">ABOUT US</h1>
