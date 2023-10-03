@@ -11,10 +11,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import Header5 from "../../public/assets/Header5.png";
-import Header6 from "../../public/assets/Header6.png";
-import Header7 from "../../public/assets/Header7.png";
-import Header8 from "../../public/assets/Header8.png";
+import Header5 from "../../public/assets/HeaderU5.png";
+import Header6 from "../../public/assets/HeaderU6.png";
+import Header7 from "../../public/assets/HeaderU7.png";
+import Header8 from "../../public/assets/HeaderU8.png";
 import HeaderM5 from "../../public/assets/HeaderM5.png";
 import HeaderM6 from "../../public/assets/HeaderM6.png";
 import HeaderM7 from "../../public/assets/HeaderM7.png";
