@@ -1,9 +1,9 @@
 import * as React from "react";
 import Navbar from "./components/header/navbar";
 import { useEffect, useState, useRef } from "react";
-import Image from "next/image";
 
 import Value from "./components/cards/productCards/Value";
+import Homeimg from "./components/cards/productCards/Homeimg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper";
@@ -11,28 +11,22 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import Mudkip2 from "../../public/assets/mudkip2.jpg";
-import Header1 from "../../public/assets/Header1.png";
-import Header2 from "../../public/assets/Header2.png";
-import Header3 from "../../public/assets/Header3.png";
-import Header4 from "../../public/assets/Header4.png";
-import HeaderM1 from "../../public/assets/HeaderM1.jpeg";
-import HeaderM2 from "../../public/assets/HeaderM2.png";
-import HeaderM3 from "../../public/assets/HeaderM3.png";
-import HeaderM4 from "../../public/assets/HeaderM4.png";
-import sampleHeader from "../../public/assets/sampleHeader.png";
-import sampleHeader2 from "../../public/assets/sampleHeader2.png";
-import Homeimg from "./components/cards/productCards/Homeimg";
+import Header5 from "../../public/assets/Header5.png";
+import Header6 from "../../public/assets/Header6.png";
+import Header7 from "../../public/assets/Header7.png";
+import Header8 from "../../public/assets/Header8.png";
+import HeaderM5 from "../../public/assets/HeaderM5.png";
+import HeaderM6 from "../../public/assets/HeaderM6.png";
+import HeaderM7 from "../../public/assets/HeaderM7.png";
+import HeaderM8 from "../../public/assets/HeaderM8.png";
 import Footer from "./components/cards/productCards/footer/Footer";
 import Video from "./components/cards/productCards/Video";
 
 import {
-  faChildren,
   faHandHoldingHeart,
   faChartLine,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
-import { Divide } from "hamburger-react";
 import Head from "next/head";
 
 interface IHomeProps {}
@@ -59,15 +53,39 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
 
   const Homeimgs = [
     {
-      link: "https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby",
-      gambar: Header4,
+      link: "",
+      gambar: Header5,
+    },
+    {
+      link: "",
+      gambar: Header6,
+    },
+    {
+      link: "",
+      gambar: Header7,
+    },
+    {
+      link: "",
+      gambar: Header8,
     },
   ];
 
   const HomeimgMs = [
     {
-      link: "https://www.goersapp.com/events/waku-waku-festival-vol-2--wakuwaku2sby",
-      gambar: HeaderM4,
+      link: "",
+      gambar: HeaderM5,
+    },
+    {
+      link: "",
+      gambar: HeaderM6,
+    },
+    {
+      link: "",
+      gambar: HeaderM7,
+    },
+    {
+      link: "",
+      gambar: HeaderM8,
     },
   ];
 
@@ -164,7 +182,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <div className="header">
         <Navbar />
       </div>
-      {/* <div className="subHeader">
+      <div className="subHeader">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
@@ -200,7 +218,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
             </div>
           )}
         </Swiper>
-      </div> */}
+      </div>
       <div className="aboutUs" id="about-us">
         <div className="contentAboutUs">
           <h1 className="textJudul">ABOUT US</h1>
