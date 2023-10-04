@@ -1,7 +1,6 @@
 import * as React from "react";
 import Navbar from "./components/header/navbar";
 import Footer from "./components/cards/productCards/footer/Footer";
-import Image from "next/image";
 
 //utama
 import Partner1 from "../../public/assets/Partner1/1.png"
@@ -148,90 +147,14 @@ const OurPartner: React.FunctionComponent<IOurPartnerProps> = (props) => {
       judul: 'instpower',
       gambar: PartnerS3,
     },
-    // {
-    //   judul: 'GRAB',
-    //   gambar: PartnerS4,
-    // },
-    // {
-    //   judul: 'Emina',
-    //   gambar: PartnerS5,
-    // },
-    // {
-    //   judul: 'LA zone',
-    //   gambar: PartnerS6,
-    // },
-    // {
-    //   judul: 'Mandiri',
-    //   gambar: PartnerS7,
-    // },
-    // {
-    //   judul: 'Tiket.com',
-    //   gambar: PartnerS9,
-    // },
-    // {
-    //   judul: 'Photomatics',
-    //   gambar: PartnerS10,
-    // },
-    // {
-    //   judul: 'Telkomsel',
-    //   gambar: PartnerS11,
-    // },
-    // {
-    //   judul: 'NOVOTEL',
-    //   gambar: PartnerS12,
-    // },
-    // {
-    //   judul: 'MERCURE HOTEL',
-    //   gambar: PartnerS13,
-    // },
-    // {
-    //   judul: 'Suara Merdeka Network',
-    //   gambar: PartnerS14,
-    // },
     {
       judul: 'Softex',
       gambar: PartnerS15,
     },
-    // {
-    //   judul: 'KLT New',
-    //   gambar: PartnerS16,
-    // },
-    // {
-    //   judul: 'RUMAHKECE.NET',
-    //   gambar: PartnerS17,
-    // },
-    // {
-    //   judul: 'HARPER PRODUCTION',
-    //   gambar: PartnerS18,
-    // },
-    // {
-    //   judul: 'Le Minerale',
-    //   gambar: PartnerFnB1,
-    // },
-    // {
-    //   judul: 'Top Cappucino',
-    //   gambar: PartnerFnB2,
-    // },
-    // {
-    //   judul: 'Chatime',
-    //   gambar: PartnerFnB3,
-    // },
-    // {
-    //   judul: 'JATINANGOR',
-    //   gambar: PartnerFnB4,
-    // },
-    // {
-    //   judul: 'Mie Sedaap',
-    //   gambar: PartnerFnB5,
-    // },
     {
       judul: 'Nutriville',
       gambar: PartnerFnB6,
     },
-    // {
-    //   judul: 'Teh Pucuk Harum',
-    //   gambar: PartnerFnB7,
-    // },
     {
       judul: 'Sari Roti',
       gambar: PartnerFnB8,

@@ -1,6 +1,6 @@
 import * as React from "react";
 import Navbar from "./components/header/navbar";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper";
@@ -211,7 +211,6 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
         <div className="popUpBrand">
           <div
             className="containerPopUpBrand"
-            // onClick={() => setIsClicked(!isClicked)}
           >
             <div className="containerButtonPopUp">
               <button
@@ -232,14 +231,12 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
                   }}
                   pagination={{ clickable: true }}
                   freeMode={true}
-                  // navigation={true}
                   modules={[Autoplay, Pagination, Navigation, FreeMode]}
                   className="mySwiper"
                 >
                   {isDataImagePopUp.map((image, index) => (
                     <SwiperSlide key={index}>
                       <Image
-                        // className="imagePopUp"
                         src={image ? image : ""}
                         alt="Sounds of Downtown - sod"
                       />
@@ -248,11 +245,6 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
                 </Swiper>
               </div>
             </div>
-            {/* <Image
-                className="imagePopUp"
-                src={isDataImagePopUp ? isDataImagePopUp : ""}
-                alt="Sounds of Downtown - sod"
-              /> */}
             <h2 className="judulPopUp"> {isDataJudulPopUp} </h2>
             <div className="deskripsiPopUp"> {isDataDeskripsiPopUp} </div>
             <div className="containerIconPopup">

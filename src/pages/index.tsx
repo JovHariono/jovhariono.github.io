@@ -248,12 +248,6 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           </div>
         </div>
       </div>
-      {/* <div className="countdown">
-        <div className="contentCountdown">
-        <h1 className="countdownText">COUNTDOWN SOD VOL 5</h1>
-        <h1 className="containerCounter"> {countdown} </h1>
-        </div>
-      </div> */}
       <div className="containerVideoHome">
         {Videos.map((video, index) => {
           return <Video key={index} link={video.link} judul={video.judul} />;

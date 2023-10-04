@@ -1,8 +1,6 @@
 import * as React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
-import Mudkip from "../../../../../../public/assets/mudkip.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -12,9 +10,6 @@ interface IFooterProps {}
 const Footer: React.FunctionComponent<IFooterProps> = (props) => {
   return (
     <div className="containerFooter">
-      {/* <div className='imgFooter'>
-        <Image src={Mudkip} alt='Sounds of Downtown - sod' />
-        </div> */}
       <div className="deskripsiFooter">
         <h1 className="textFooter">CONTACT US :</h1>
         <div className="contentFooter">

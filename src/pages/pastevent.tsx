@@ -5,7 +5,6 @@ import CountUp from 'react-countup'
 import Footer from "./components/cards/productCards/footer/Footer";
 import Event from "./components/cards/productCards/Event";
 
-import Mudkip2 from "../../public/assets/mudkip2.jpg";
 import Event1 from "../../public/assets/Event1.png";
 import Event2 from "../../public/assets/Event2.png";
 import Event3 from "../../public/assets/Event3.png";
