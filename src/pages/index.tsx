@@ -126,7 +126,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     },
     {
       link: "https://www.youtube.com/embed/cetYc2e-Gac?si=Gf2VbTLvkOYE_kPI",
-      judul: "Inquisitive at Bengkel",
+      judul: "Inquisitive Live at Jakarta",
     },
     {
       link: "https://www.youtube.com/embed/zbAcvSQ1TDU?si=HKXxTmG3GushQ96R",
@@ -184,10 +184,10 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       </div>
       <div className="subHeader">
         <Swiper
-          spaceBetween={30}
+          spaceBetween={0}
           slidesPerView={1}
           autoplay={{
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
@@ -195,6 +195,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
           navigation={true}
           modules={[Autoplay, Pagination, Navigation, FreeMode]}
           className="mySwiper"
+          speed={2000}
         >
           {isMobile ? (
             <div>

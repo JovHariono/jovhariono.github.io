@@ -19,9 +19,9 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
         <h1 className="textFooter">CONTACT US :</h1>
         <div className="contentFooter">
           <div className="containerContentFooter">
-            <Link className="contentFooter" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpZxJxjpDPFfBTMQFkrzvGQnNKmRgBbQbnTqPMccKMSQzWbtqZCMPpgFCTGVvFlrJnsWL">
+            <Link className="contentFooter" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDbgzcTsfflzTCtBcgxHFbwjKtMzPKlDcqHPxQqfFNbVpWqqKNvxKfmLDQJlGrfwhdsgjnC">
               <FontAwesomeIcon className="icon" icon={faEnvelope} />
-              <div>hello@sodindonesia.com</div>
+              <div>hello.sodfestival@gmail.com</div>
             </Link>
             <Link href="https://www.instagram.com/sod.group/" className="contentFooter">
               <FontAwesomeIcon icon={faInstagram} className="icon" />
