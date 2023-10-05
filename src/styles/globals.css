@@ -913,6 +913,25 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 /* swiper */
 
+@media only screen and (max-width: 1300px){
+  .containerVideoHome{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .containerCounterUp{
+    gap: 10rem;
+  }
+
+  .containerEvent{
+    height: 21rem;
+  }
+
+  .partnerContent{
+    padding-left: 6rem;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .containerVideo {
     width: 47%;
