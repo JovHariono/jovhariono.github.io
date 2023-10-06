@@ -182,7 +182,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
         <div className="header">
           <Navbar />
         </div>
-        <div className="subHeade  r2">
+        <div className="subHeader2">
           <h1>OUR BRAND</h1>          
           <div className="seperator"></div>
         </div>
