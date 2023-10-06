@@ -1,6 +1,6 @@
 import * as React from "react";
 import Navbar from "./components/header/navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper";
@@ -146,7 +146,7 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
       judulPopUp: "SOD Live",
       deskripsiPopUp:
         "SOD LIVE is here to bridge local communities to musicians to brands through music collective events.",
-      instagram: "",
+      instagram: "https://www.instagram.com/sodliveid/",
       twitter: "",
       tiktok: "",
       youtube: "",
@@ -182,8 +182,8 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
         <div className="header">
           <Navbar />
         </div>
-        <div className="subHeader2">
-          <h1>OUR BRAND</h1>
+        <div className="subHeade  r2">
+          <h1>OUR BRAND</h1>          
           <div className="seperator"></div>
         </div>
         <div className="contentOurBrand">
@@ -226,17 +226,20 @@ const OurBrand: React.FunctionComponent<IOurBrandProps> = (props) => {
                   spaceBetween={0}
                   slidesPerView={1}
                   autoplay={{
-                    delay: 1000,
+                    delay: 2000,
                     disableOnInteraction: false,
                   }}
                   pagination={{ clickable: true }}
                   freeMode={true}
+                  speed={1500}
+                  // navigation={true}
                   modules={[Autoplay, Pagination, Navigation, FreeMode]}
                   className="mySwiper"
                 >
                   {isDataImagePopUp.map((image, index) => (
                     <SwiperSlide key={index}>
                       <Image
+                        // className="imagePopUp"
                         src={image ? image : ""}
                         alt="Sounds of Downtown - sod"
                       />

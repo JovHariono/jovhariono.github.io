@@ -722,8 +722,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .iconPopUp {
-  font-size: 1.5rem;
   color: black;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* Our Brand */
