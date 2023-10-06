@@ -792,6 +792,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Our Partner */
 .partnerContent {
   padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #e5dcc8;
   display: flex;
   flex-wrap: wrap;
@@ -928,7 +929,26 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .partnerContent{
-    padding-left: 6rem;
+    padding-left: 8rem;
+  }
+
+  .contentOurBrand{
+    padding-left: 10rem;
+  }
+
+  .containerBrand{
+    width: 25%;
+  }
+
+  .judulValue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .containerPartner{
+    width: 14%;
   }
 }
 
