@@ -17,19 +17,19 @@ const ParagonList: React.FunctionComponent<IParagonListProps> = (props) => {
   useEffect(() => {
     if (!isLoaded) {
       axios
-        .get(`https://sodfestival.online/api/data1?_sort=id&_order=desc&_limit=30`)
+        .get(`https://sodfestival.online/data1?_sort=id&_order=desc&_limit=30`)
         .then((res) => {
           setData1(res.data);
         })
         .catch((err) => console.log(err));
       axios
-        .get(`https://sodfestival.online/api/data2?_sort=id&_order=desc&_limit=30`)
+        .get(`https://sodfestival.online/data2?_sort=id&_order=desc&_limit=30`)
         .then((res) => {
           setData2(res.data);
         })
         .catch((err) => console.log(err));
       axios
-        .get(`https://sodfestival.online/api/data3?_sort=id&_order=desc&_limit=30`)
+        .get(`https://sodfestival.online/data3?_sort=id&_order=desc&_limit=30`)
         .then((res) => {
           setData3(res.data);
         })
@@ -37,19 +37,19 @@ const ParagonList: React.FunctionComponent<IParagonListProps> = (props) => {
       setIsLoaded(true);
       setInterval(() => {
         axios
-          .get(`https://sodfestival.online/api/data1?_sort=id&_order=desc&_limit=30`)
+          .get(`https://sodfestival.online/data1?_sort=id&_order=desc&_limit=30`)
           .then((res) => {
             setData1(res.data);
           })
           .catch((err) => console.log(err));
         axios
-          .get(`https://sodfestival.online/api/data2?_sort=id&_order=desc&_limit=30`)
+          .get(`https://sodfestival.online/data2?_sort=id&_order=desc&_limit=30`)
           .then((res) => {
             setData2(res.data);
           })
           .catch((err) => console.log(err));
         axios
-          .get(`https://sodfestival.online/api/data3?_sort=id&_order=desc&_limit=30`)
+          .get(`https://sodfestival.online/data3?_sort=id&_order=desc&_limit=30`)
           .then((res) => {
             setData3(res.data);
           })
