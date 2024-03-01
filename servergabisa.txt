@@ -1,0 +1,57 @@
+const { createServer } = require('https'); // Use 'https' module
+const { readFileSync } = require('fs');
+const { parse } = require('url');
+const next = require('next');
+const jsonServer = require('json-server');
+
+const dev = process.env.NODE_ENV !== 'production';
+const hostname = 'localhost';
+const port = process.env.PORT || 8080;
+const jsonServerPort = 3001;
+
+// Read SSL certificates
+const privateKey = readFileSync('/path/to/private-key.pem', 'utf8');
+const certificate = readFileSync('/path/to/certificate.pem', 'utf8');
+const ca = readFileSync('/path/to/ca.pem', 'utf8');
+
+const credentials = { key: privateKey, cert: certificate, ca: ca };
+
+const app = next({ dev, hostname, port });
+const handle = app.getRequestHandler();
+
+app.prepare().then(() => {
+  // JSON Server setup
+  const jsonServerApp = jsonServer.create();
+  const jsonRouter = jsonServer.router('./data/db.json');
+  const middlewares = jsonServer.defaults();
+  jsonServerApp.use(middlewares);
+  jsonServerApp.use('/api', jsonRouter);
+
+  // Next.js server with HTTPS
+  createServer(credentials, async (req, res) => {
+    try {
+      const parsedUrl = parse(req.url, true);
+      const { pathname, query } = parsedUrl;
+
+      if (pathname === '/a') {
+        await app.render(req, res, '/a', query);
+      } else if (pathname === '/b') {
+        await app.render(req, res, '/b', query);
+      } else {
+        await handle(req, res, parsedUrl);
+      }
+    } catch (err) {
+      console.error('Error occurred handling', req.url, err);
+      res.statusCode = 500;
+      res.end('internal server error');
+    }
+  }).listen(port, (err) => {
+    if (err) throw err;
+    console.log(`> Next.js Ready on https://${hostname}:${port}`);
+
+    // JSON Server listen
+    jsonServerApp.listen(jsonServerPort, () => {
+      console.log(`> JSON Server Ready on https://${hostname}:${jsonServerPort}/api`);
+    });
+  });
+});

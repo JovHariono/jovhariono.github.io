@@ -1,0 +1,1438 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+@font-face{
+  font-family: "Literata", sans-serif;
+  src: url("../../public/assets/font/Literata-VariableFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Days One";
+  src: url("../../public/assets/font/DaysOne-Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Titan One";
+  src: url("../../public/assets/font/TitanOne-Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Figtree";
+  src: url("../../public/assets/font/Figtree-VariableFont_wght.ttf") format("truetype");
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+hr {
+  position: relative;
+  top: 20px;
+  border: none;
+  height: 12px;
+  background: black;
+  padding-bottom: 50px;
+}
+
+div {
+  font-family: "Literata", sans-serif;
+}
+
+p {
+  font-family: "Literata", sans-serif;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-family: "Days One", sans-serif;
+}
+
+h2 {
+  font-family: "Days One", sans-serif;
+}
+
+h3 {
+  font-family: "Days One", sans-serif;
+  padding-top: 0.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Days One", sans-serif;
+}
+
+.linkabout {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Days One", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.containerNav {
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #22404a;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbarMobile {
+  background-color: #22404a;
+  height: 6rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.navbarContent {
+  display: flex;
+}
+
+.menuNav {
+  display: flex;
+  background-color: #22404a;
+  color: white;
+  height: 3rem;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+  color: white;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #22404a;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: white;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: white;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  font-family: "Days One", sans-serif;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  display: none !important;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.navbarMobileImg {
+  display: flex;
+  height: 6rem;
+}
+
+.navbar-img {
+  width: auto;
+  height: 6rem;
+}
+
+.imgNav {
+  width: 6.5rem;
+  height: auto;
+  /* object-fit: contain; */
+}
+
+.seperator {
+  background-color: #e5dcc8;
+  padding-top: 0.3rem;
+  width: 6.2rem;
+  height: 0.2rem;
+}
+
+.seperatorBrand {
+  background-color: #22404a;
+  padding-top: 0.3rem;
+  width: 6.2rem;
+  height: 0.2rem;
+}
+
+.textJudul {
+  padding-top: 3rem;
+}
+
+.textContent {
+  padding-top: 1.5rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.ul-bar {
+  display: flex;
+  height: 2.8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar ul {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.li-bar {
+  list-style-type: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+.li-bar:hover {
+  background-color: #e5dcc8;
+  transition: 0.2s ease-in-out;
+  border-radius: 5%;
+}
+
+.gambarHome {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.imgHome {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+  /* image-rendering: pixelated; */
+}
+
+.containerHomeValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  gap: 3rem;
+}
+
+.textValue {
+  padding-top: 1rem;
+}
+
+/* subheader */
+.subHeader {
+  background-color: #ebfcff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  /* animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both; */
+}
+
+.subHeader2 {
+  background-color: #b2bcbb;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 13rem;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  background-image: url("../../public/assets/backgroundHeader.png");
+  background-size: cover; /* Adjusts the background image size to cover the container */
+  background-position: center; /* Centers the background image */
+  /* Additional background properties */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+/* subheader */
+
+/* about us */
+.aboutUs {
+  /* background-color: #E0B4A4; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-image: url("../../public/assets/backgroundAbout.png");
+  background-size: cover; /* Adjusts the background image size to cover the container */
+  background-position: center; /* Centers the background image */
+  /* Additional background properties */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid #e5dcc8;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.contentAboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.judulAbout {
+  padding-top: 1.5rem;
+}
+
+.containerValue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 23%;
+  height: 20rem;
+  padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  padding: 1rem;
+}
+
+.containerValue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2.5px solid transparent;
+  z-index: -1;
+  transition: border-color 1s;
+}
+
+.containerValue:hover::before {
+  border-color: white;
+  animation: animate 1s linear;
+}
+
+@keyframes animate {
+  0% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  20% {
+    border-top-color: white;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  40% {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  60% {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: transparent;
+  }
+  80% {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+  }
+  100% {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+  }
+}
+
+/* .containerValue:hover::before {
+  content: '';
+  position: absolute;
+  width: 5000px;
+  height: 50%;
+  background: linear-gradient(#00ccff, #d400d4);
+  background-color: transparent;
+  animation: animate 4s linear infinite;
+  z-index: -1;
+  transition: 1s ease-in-out;
+}
+
+.containerValue:hover::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: black;
+  z-index: -1;
+  transition: 1s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.faValue {
+  font-size: 4rem;
+  width: 5rem;
+}
+
+.textValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* about us */
+
+/* countdown */
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.contentCountdown {
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.countdownText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: first baseline;
+  font-size: 2.5rem;
+  /* width: 65.7%; */
+}
+
+.containerCounter {
+  padding-top: 2rem;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counterCountent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.angkaCounter {
+  font-size: 5rem;
+}
+
+.textCounter {
+  font-size: 18px;
+}
+
+.separatorCounter {
+  font-size: 3rem;
+}
+
+/* countdown */
+
+/* Video */
+.containerVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  /* animation-name: fadeInUp;
+  animation-fill-mode: both; */
+}
+
+.containerEmbed {
+  padding: 1.2rem;
+  background-color: #22404a;
+  border: 0.5px solid #e5dcc8;
+  gap: 2rem;
+}
+
+.containerVideoHome {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  background-color: #b2bcbb;
+  padding-top: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3rem;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  background-image: url("../../public/assets/backgroundVideo.png");
+  background-size: cover; /* Adjusts the background image size to cover the container */
+  background-position: center; /* Centers the background image */
+  /* Additional background properties */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.judulVideo {
+  background-color: #e5dcc8;
+  color: #22404a;
+  width: 85%;
+  font-size: 18px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video */
+
+/* Our Brand */
+.contentOurBrand {
+  display: flex;
+  align-items: center;
+  background-image: url("../../public/assets/backgroundourbrand.png");
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-left: 15rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: auto;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.containerBrand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 23.5%;
+  background-color: #e5dcc8;
+  padding-bottom: 1rem;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  text-decoration: none;
+}
+
+.contentOurBrand2 {
+  display: flex;
+  align-items: center;
+  background-image: url("../../public/assets/backgroundourbrand.png");
+  flex-wrap: wrap;
+  gap: 4rem 12rem;
+  justify-content: center;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: auto;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.containerBrand2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 30%;
+  background-color: #e5dcc8;
+  padding-bottom: 1rem;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  text-decoration: none;
+}
+
+/* .containerBrand:hover {
+  cursor: pointer;
+} */
+
+.judulBrand {
+  font-size: 1rem;
+  padding-bottom: 0.4rem;
+  color: #22404a;
+}
+
+.imgBrand {
+  height: auto;
+  padding-bottom: 1rem;
+  object-fit: contain;
+}
+
+.blurContainer {
+  filter: blur(5px);
+  transition: 0.5s ease-in-out;
+}
+
+.popUpBrand {
+  position: fixed;
+  top: 12%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  padding-top: 2rem;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: white;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation-duration: 0.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.containerPopUpBrand {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.containerUtamaImagePopUp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerImagePopUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  width: 20rem !important;
+  height: 20rem !important;
+}
+
+.imagePopUp {
+  width: 20rem !important;
+  height: 20rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.judulPopUp {
+  padding-bottom: 0.2rem;
+}
+
+.judulPopUp2 {
+  display: flex;
+  justify-content: center;
+}
+
+.containerButtonPopUp {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 0.5rem;
+}
+
+.buttonPopUp:hover {
+  cursor: pointer;
+}
+
+.buttonPopUp {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.containerIconPopup {
+  padding-top: 1rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconPopUp {
+  color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Our Brand */
+
+/* Past Event */
+.contentPastEvents {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerEvent {
+  width: 25%;
+  object-fit: contain;
+  height: 25rem;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.imgEvent {
+  transition: filter 0.5s;
+}
+
+.imgEvent:hover {
+  filter: brightness(50%);
+}
+
+.containerCounterUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4dccf;
+  /* background-color: rgba(228, 220, 207, 0.5); */
+  color: #22404a;
+  gap: 15rem;
+  width: 100%;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid #22404a;
+}
+
+.counterItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countUpNum {
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Past Event */
+
+/* Our Partner */
+.partnerContent {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #e5dcc8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-left: 7rem;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.containerPartner {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagePartner {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* Our Partner */
+
+/* Footer */
+.containerFooter {
+  padding-right: 5rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 7rem;
+  background-color: #22404a;
+  color: #ffffff;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+
+.containerContentFooter {
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 7rem;
+  /* justify-content: center; */
+  /* align-items: center ; */
+}
+
+.contentFooter {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Days One", sans-serif;
+  gap: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  text-decoration: underline;
+}
+
+.contentFooter:hover {
+  display: flex;
+  text-decoration: none;
+  color: #e5dcc8;
+  font-family: "Days One", sans-serif;
+  gap: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+}
+
+.imgFooter {
+  width: 9rem;
+  height: 6rem;
+}
+
+.textFooter {
+  font-size: 1rem;
+  /* text-decoration: underline; */
+}
+
+.icon{
+  width: 1.3rem;
+}
+
+/* Footer */
+
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 100%;
+
+  /* Center slide text vertically */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.containerImagePopUp .swiper-slide img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 20rem !important; 
+  height: 20rem !important;
+  padding: 0rem !important;
+  margin: 0rem !important;
+}
+/* swiper */
+
+@media only screen and (max-width: 1300px){
+  .containerVideoHome{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .containerCounterUp{
+    gap: 10rem;
+  }
+
+  .containerEvent{
+    height: 21rem;
+  }
+
+  .partnerContent{
+    padding-left: 8rem;
+  }
+
+  .contentOurBrand{
+    padding-left: 10rem;
+  }
+
+  .containerBrand{
+    width: 25%;
+  }
+
+  .containerBrand2{
+    width: 35%;
+  }
+
+  .judulValue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .containerPartner{
+    width: 14%;
+  }
+
+  .popUpBrand{
+    top: 5%;
+    left: 27.5%;
+    padding-bottom: 2rem;
+  }
+
+  .containerEvent{
+    height: 19.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .containerVideo {
+    width: 47%;
+  }
+
+  .judulVideo {
+    font-size: 14px;
+  }
+
+  .containerCounterUp {
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counterItem {
+    width: 20%;
+  }
+
+  .countUpNum {
+    font-size: 2.5rem;
+  }
+
+  .containerEvent {
+    height: 14rem;
+  }
+
+  .contentOurBrand {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .contentOurBrand2 {
+    padding-left: 4rem;
+    padding-right: 4rem;    
+    gap: 4rem 6rem;
+  }
+
+  .containerValue{
+    width: 30%;
+    height: 15rem;
+  }
+
+  .containerBrand {
+    width: 27%;
+  }
+
+  .judulBrand {
+    font-size: 1rem;
+  }
+
+  .menu-item {
+    font-size: 1rem;
+  }
+
+  .popUpBrand {
+    position: fixed;
+    top: 10%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+  }
+
+  .partnerContent{
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+
+  .containerPartner{
+    width: 20%;
+  }
+
+  .textContent{
+    width: 60%;
+  }
+
+  .containerHomeValue{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .judulValue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 816px){
+  .contentOurBrand{
+    padding-left: 4rem;
+  }
+
+  .containerBrand{
+    width: 26%;
+  }
+
+  .judulBrand{
+   font-size: 0.9rem;
+  }
+
+  .containerVideoHome{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .containerEvent{
+    height: 13rem;
+  }
+
+  .popUpBrand{
+    left: 13%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .subHeader2{
+    height: 15rem;
+  }
+
+  .containerCounterUp{
+    height: 12rem;
+  }
+
+  .countUpNum{
+    font-size: 3rem;
+  }
+  
+  .pCounter{
+    font-size: 1.5rem;
+  }
+
+  .popUpBrand{
+    left: 11%;
+  }
+  
+  .containerEvent{
+    height: 12rem;
+  }
+
+  .containerBrand{
+    width: 26%;
+  }
+
+  .containerBrand2{
+    width: 40%;
+  }
+
+  .partnerContent{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .judulBrand{
+    font-size: 0.7rem;
+  }
+
+}
+
+@media only screen and (max-width: 760px){
+  .partnerContent{
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  .containerPartner{
+    width: 19%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+
+  h1{
+    font-size: 1.8rem;
+  }
+
+  h2{
+    font-size: 1.6rem;
+  }
+
+  h3{
+    font-size: 1.2rem;
+  }
+
+  .textJudul{
+    font-size: 1.6rem;
+  }
+
+  .textContent{
+    font-size: 1rem;
+  }
+
+  .containerVideo {
+    width: 100%;
+  }
+
+  .containerBrand {
+    width: 90%;
+  }
+
+  .containerBrand2 {
+    width: 85%;
+  }
+
+  .judulBrand {
+    font-size: 0.7rem;
+  }
+
+  .containerHomeValue {
+    flex-direction: column;
+  }
+
+  .containerValue {
+    width: 100%;
+  }
+
+  .containerVideoHome {
+    flex-direction: column;
+  }
+
+  .contentOurBrand {
+    flex-direction: column;
+  }
+
+  .contentOurBrand2 {
+    flex-direction: column;
+  }
+
+  .containerCounterUp {
+    gap: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-wrap: wrap;
+    height: 15rem;
+  }
+
+  .countUpNum {
+    font-size: 2rem;
+  }
+
+  .containerEvent {
+    width: 50%;
+    height: 13.5rem;
+  }
+
+  .counterItem {
+    width: 40%;
+  }
+  
+  .popUpBrand {
+    position: fixed;
+    top: 13%;
+    left: 11.5%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding-left: 1rem;
+    padding-right: 1rem;  
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+  }
+
+  .judulPopUp {
+    font-size: 1rem;
+  }
+
+  .judulPopUp2 {
+    font-size: 1rem;
+  }
+
+  .deskripsiPopUp {
+    font-size: 0.9rem;
+  }
+
+  .partnerContent {
+    padding-left: 1.5rem;
+    padding-right: 0;
+  }
+
+  .containerPartner {
+    width: 23.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagePartner {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .containerFooter{
+    padding-right: 1rem;
+  }
+
+  .textContent{
+    width: 60%;
+  }
+
+  .textValue{
+    width: 80%;
+  }
+  
+  .containerHomeValue{
+    padding-top: 0rem;
+    gap: 0rem;
+  }
+
+  .containerImagePopUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 18rem !important;
+    height: 18rem !important;
+  }
+}
+
+.scroll-list {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../public/assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0 20px;
+}
+
+.scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.scroll p {
+  font-size: 5em;
+  color: black;
+  font-weight: bold;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  line-height: 10px;
+}
+
+.RightToLeft {
+  animation: RightToLeft 20s infinite linear;
+}
+
+.RightToLeft p {
+  font-family: "Figtree";
+}
+
+@keyframes  RightToLeft {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.LeftToRight {
+  animation: LeftToRight 20s infinite linear;
+}
+
+.LeftToRight p {
+  font-family: "Figtree";
+}
+
+@keyframes  LeftToRight {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-holder {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.data-item {
+  font-size: 14px;
+  border: 0.5px solid black;
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 2px;
+}

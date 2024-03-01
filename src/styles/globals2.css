@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../../public/assets/font/Figtree-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TitanOne";
+  src: url("../../public/assets/font/TitanOne-Regular.ttf") format("truetype");
+}
+
+.containerFormParagon {
+  display: flex;
+  font-family: "TitanOne";
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  animation-duration: 1.8s;
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+  background-color: #a3d7e2;
+  background-size: cover; /* Adjusts the background image size to cover the container */
+  background-position: center; /* Centers the background image */
+  /* Additional background properties */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.containerInputFormParagon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 7rem 7rem 7rem;
+  width: 100%;
+}
+
+.imageNovo {
+  height: 15rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.formParagon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formParagon h1 {
+  font-family: "FigTree";
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inputWrapper p {
+  color: #ffffff;
+}
+
+.inputWrapper input {
+  font-family: "FigTree";
+  width: 37rem;
+  height: 3rem;
+  background-color: transparent;
+  opacity: 0.7;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  border: 2px solid;
+  border-color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.inputWrapper input:hover {
+  border: 3px solid;
+  border-color: #ffffff;
+}
+
+.inputWrapper input:focus,
+.inputWrapper input:active {
+  border: 3px solid #ffffff !important;
+  outline: none;
+}
+
+.inputWrapper button {
+  width: 30%;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  font-family: "FigTree";
+  font-size: 1.2rem;
+  background-color: #687ebd;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 900px) {
+  .containerInputFormParagon {
+    padding: 0 4rem 4rem 4rem;
+  }
+
+  .imageNovo {
+    object-fit: contain;
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 816px) {
+  .imageNovo {
+    object-fit: contain;
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 816px) {
+  .containerInputFormParagon {
+    padding: 0;
+  }
+
+  .formParagon {
+    width: 80%;
+  }
+
+  .formParagon h1 {
+    font-size: 1.2rem;
+  }
+
+  .inputWrapper {
+    width: 100%;
+  }
+
+  .inputWrapper input {
+    width: 100%;
+  }
+
+  .inputWrapper p {
+    font-size: 0.8rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
