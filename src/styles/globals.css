@@ -1438,7 +1438,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .scroll-caption {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   width: 100vw;
   text-align: center;
 }
@@ -1446,4 +1447,5 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .scroll-caption h1 {
   font-family: 'Titan One';
   font-size: 3rem;
+  font-weight: 400;
 }
