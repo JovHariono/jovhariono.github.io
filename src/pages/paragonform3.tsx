@@ -22,7 +22,7 @@ const FormParagon: React.FunctionComponent<IFormParagonProps> = (props) => {
                 kata,
             };
 
-            const postResponse = await axios.post("http://sodfestival.online/api/data3", postData, {
+            const postResponse = await axios.post("https://sodfestival.online/api/data3", postData, {
                 headers: { "Content-Type": "application/json" },
             });
 
