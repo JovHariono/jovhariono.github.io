@@ -1364,6 +1364,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  color: #ffffff;
 }
 
 .scroll {
@@ -1377,8 +1378,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .scroll p {
-  font-size: 5em;
-  color: black;
+  font-family: 'Titan One';
+  font-size: 2.5em;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -1446,6 +1448,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .scroll-caption h1 {
   font-family: 'Titan One';
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
 }

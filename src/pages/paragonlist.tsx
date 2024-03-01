@@ -13,7 +13,7 @@ const ParagonList: React.FunctionComponent<IParagonListProps> = (props) => {
   useEffect(() => {
     if (!isLoaded) {
       axios
-        .get(`https://sodfestival.online/data1?_sort=id&_order=desc&_limit=10`)
+        .get(`https://sodfestival.online/data1?_sort=id&_order=desc`)
         .then((res) => {
           setData(res.data);
           setIsLoaded(true);
@@ -21,7 +21,7 @@ const ParagonList: React.FunctionComponent<IParagonListProps> = (props) => {
         .catch((err) => console.log(err));
       setInterval(() => {
         axios
-          .get(`https://sodfestival.online/data1?_sort=id&_order=desc&_limit=10`)
+          .get(`https://sodfestival.online/data1?_sort=id&_order=desc`)
           .then((res) => {
             setData(res.data);
           })
@@ -34,7 +34,7 @@ const ParagonList: React.FunctionComponent<IParagonListProps> = (props) => {
     <>
       <div className='scroll-list'>
         <div className='scroll-caption'>
-          <h1>What is the best version of you?</h1>
+          <h1>WHAT IS THE BEST VERSION OF YOU?</h1>
         </div>
         <div className="scroll">
           <div className="RightToLeft">
