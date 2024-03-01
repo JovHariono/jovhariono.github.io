@@ -1436,3 +1436,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin: 5px 0;
   padding: 2px;
 }
+
+.scroll-caption {
+  padding-top: 1rem;
+  width: 100vw;
+  text-align: center;
+}
+
+.scroll-caption h1 {
+  font-family: 'Titan One';
+  font-size: 3rem;
+}
