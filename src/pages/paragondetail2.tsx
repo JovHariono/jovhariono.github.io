@@ -15,7 +15,7 @@ const ParagonDetail: React.FunctionComponent<IParagonDetailProps> = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://sodindonesia.com:3001/api/data2/${id}`)
+      .get(`http://sodfestival.online/api/data2/${id}`)
       .then((res) => {
         setData(res.data)
         setIsPending(false)
@@ -28,7 +28,7 @@ const ParagonDetail: React.FunctionComponent<IParagonDetailProps> = (props) => {
 
     if(deleteKata){
         axios
-            .delete(`https://sodindonesia.com:3001/api/data2/${id}`)
+            .delete(`http://sodfestival.online/api/data2/${id}`)
             .then((res) => {
                 if(res.status === 200){
                     alert("berhasil delete data")
